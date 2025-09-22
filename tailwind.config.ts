@@ -57,6 +57,24 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Luxury design system colors
+        luxury: {
+          navy: "hsl(var(--luxury-navy))",
+          gold: "hsl(var(--luxury-gold))",
+          "gold-light": "hsl(var(--luxury-gold-light))",
+          cream: "hsl(var(--luxury-cream))",
+          gray: "hsl(var(--luxury-gray))",
+        },
+      },
+      backgroundImage: {
+        "gradient-luxury": "var(--gradient-luxury)",
+        "gradient-gold": "var(--gradient-gold)",
+        "gradient-hero": "var(--gradient-hero)",
+      },
+      boxShadow: {
+        "luxury": "var(--shadow-luxury)",
+        "card": "var(--shadow-card)",
+        "gold": "var(--shadow-gold)",
       },
       borderRadius: {
         lg: "var(--radius)",

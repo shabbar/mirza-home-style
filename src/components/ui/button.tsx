@@ -15,6 +15,11 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // Luxury interior design variants
+        luxury: "bg-gradient-luxury text-primary-foreground hover:shadow-luxury transition-all duration-300 hover:scale-105",
+        gold: "bg-gradient-gold text-luxury-navy hover:shadow-gold transition-all duration-300 hover:scale-105",
+        "luxury-outline": "border-2 border-luxury-navy text-luxury-navy bg-transparent hover:bg-luxury-navy hover:text-primary-foreground transition-all duration-300",
+        "gold-outline": "border-2 border-luxury-gold text-luxury-gold bg-transparent hover:bg-luxury-gold hover:text-luxury-navy transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",
