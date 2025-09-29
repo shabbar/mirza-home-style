@@ -36,16 +36,6 @@ const Hero = () => {
             sophisticated, functional, and breathtaking interior spaces that reflect your unique style.
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="gold" size="lg" className="min-w-[200px]">
-              Start Your Project
-              <ArrowRight className="w-5 h-5" />
-            </Button>
-            <Button variant="luxury-outline" size="lg" className="min-w-[200px]">
-              View Portfolio
-            </Button>
-          </div>
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 max-w-lg mx-auto pt-8">
