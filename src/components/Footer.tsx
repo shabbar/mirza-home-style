@@ -34,25 +34,24 @@ const Footer = () => {
           <div className="space-y-6">
             <div>
               <h3 className="text-2xl font-bold text-luxury-gold mb-4">
-                S.A. Mirza Enterprises
+                SAM Enterprises
               </h3>
               <p className="text-gray-300 leading-relaxed">
-                Transforming spaces into extraordinary environments with over 20 years
-                of expertise in luxury interior design.
+                Excellence in Architecture, Interior Design, and Construction. Specializing in spaces that blend aesthetic beauty with exceptional functionality.
               </p>
             </div>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-luxury-gold" />
-                <span className="text-sm">+92 21 1234 5678</span>
+                <span className="text-sm">+92 3215 700 004</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-luxury-gold" />
-                <span className="text-sm">info@samirzaenterprises.com</span>
+                <span className="text-sm">projects@samenterprizes.biz</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-luxury-gold" />
-                <span className="text-sm">123 Design Street, Karachi</span>
+                <span className="text-sm">Islamabad, Pakistan</span>
               </div>
             </div>
           </div>

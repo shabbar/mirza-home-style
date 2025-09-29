@@ -9,19 +9,19 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+92 21 1234 5678", "+92 300 1234 567"],
+      details: ["+92 3215 700 004"],
       description: "Call us during business hours"
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@samirzaenterprises.com", "projects@samirzaenterprises.com"],
+      details: ["projects@samenterprizes.biz"],
       description: "Send us your project details"
     },
     {
       icon: MapPin,
       title: "Office",
-      details: ["123 Design Street", "Karachi, Pakistan"],
+      details: ["Islamabad, Pakistan"],
       description: "Visit our design studio"
     },
     {

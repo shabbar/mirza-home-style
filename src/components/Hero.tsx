@@ -25,16 +25,27 @@ const Hero = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
-            Transform Your Space Into
-            <span className="block text-luxury-gold">Luxury Living</span>
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
+            <span className="block text-luxury-gold mb-2">SAM Enterprises</span>
+            Excellence in Architecture, Interior Design, and Construction
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
-            S.A. Mirza Enterprises brings over two decades of expertise in creating
-            sophisticated, functional, and breathtaking interior spaces that reflect your unique style.
+          <p className="text-base md:text-lg text-gray-200 max-w-3xl mx-auto leading-relaxed">
+            At S. A. Mirza Enterprises Private Limited (SAM Enterprises), we specialize in designing and constructing spaces that blend aesthetic beauty with exceptional functionality. Based in Islamabad, we are proud to be a leader in architecture, interior design, and construction, delivering outstanding results across diverse sectors, including Hospitality and Telecommunications.
           </p>
+
+          {/* Contact Info */}
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center text-luxury-gold mt-6">
+            <div className="flex items-center gap-2">
+              <span className="text-sm font-medium">Phone:</span>
+              <span className="text-sm">+92 3215 700 004</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-sm font-medium">Email:</span>
+              <span className="text-sm">projects@samenterprizes.biz</span>
+            </div>
+          </div>
 
 
           {/* Stats */}
