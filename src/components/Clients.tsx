@@ -23,39 +23,39 @@ import sohailKhan from "@/assets/clients/sohail-khan.png";
 
 const Clients = () => {
   const clients = [
-    { name: "Hashwani Hotels", logo: hashwaniHotels },
-    { name: "Marriott", logo: marriott },
-    { name: "Marriott Hotel", logo: marriottHotel },
-    { name: "PC Legacy", logo: pcLegacy },
-    { name: "Hashwani Resort", logo: hashwaniResort },
-    { name: "Fiora Hotel Karachi", logo: fioraHotel },
-    { name: "Shigar Islamabad", logo: shigar },
-    { name: "SAIA", logo: saia },
-    { name: "Ignite", logo: ignite },
-    { name: "Pakistan Stock Exchange", logo: psx },
-    { name: "Liberte", logo: liberte },
-    { name: "Egalist Fraternist", logo: egalist },
-    { name: "NADRA", logo: nadra },
-    { name: "WiFi", logo: wifi },
-    { name: "République Française", logo: republique },
-    { name: "Pakistan", logo: pakistan },
-    { name: "Jazz", logo: jazz },
-    { name: "Zong", logo: zong },
-    { name: "Metro", logo: metro },
-    { name: "Keenu", logo: keenu },
-    { name: "Telenor", logo: telenor },
-    { name: "Sohail A. Khan Associates", logo: sohailKhan },
+    { name: "Hashwani Hotels", logo: hashwaniHotels, color: "from-blue-500/20 to-purple-500/20" },
+    { name: "Marriott", logo: marriott, color: "from-red-500/20 to-pink-500/20" },
+    { name: "Marriott Hotel", logo: marriottHotel, color: "from-amber-500/20 to-orange-500/20" },
+    { name: "PC Legacy", logo: pcLegacy, color: "from-green-500/20 to-emerald-500/20" },
+    { name: "Hashwani Resort", logo: hashwaniResort, color: "from-cyan-500/20 to-blue-500/20" },
+    { name: "Fiora Hotel", logo: fioraHotel, color: "from-violet-500/20 to-purple-500/20" },
+    { name: "Shigar", logo: shigar, color: "from-rose-500/20 to-pink-500/20" },
+    { name: "SAIA", logo: saia, color: "from-yellow-500/20 to-amber-500/20" },
+    { name: "Ignite", logo: ignite, color: "from-teal-500/20 to-cyan-500/20" },
+    { name: "PSX", logo: psx, color: "from-indigo-500/20 to-blue-500/20" },
+    { name: "Liberté", logo: liberte, color: "from-fuchsia-500/20 to-purple-500/20" },
+    { name: "Egalist", logo: egalist, color: "from-lime-500/20 to-green-500/20" },
+    { name: "NADRA", logo: nadra, color: "from-sky-500/20 to-blue-500/20" },
+    { name: "WiFi", logo: wifi, color: "from-orange-500/20 to-red-500/20" },
+    { name: "République", logo: republique, color: "from-purple-500/20 to-violet-500/20" },
+    { name: "Pakistan", logo: pakistan, color: "from-green-500/20 to-teal-500/20" },
+    { name: "Jazz", logo: jazz, color: "from-pink-500/20 to-rose-500/20" },
+    { name: "Zong", logo: zong, color: "from-emerald-500/20 to-green-500/20" },
+    { name: "Metro", logo: metro, color: "from-blue-500/20 to-indigo-500/20" },
+    { name: "Keenu", logo: keenu, color: "from-amber-500/20 to-yellow-500/20" },
+    { name: "Telenor", logo: telenor, color: "from-cyan-500/20 to-teal-500/20" },
+    { name: "Sohail Khan", logo: sohailKhan, color: "from-violet-500/20 to-fuchsia-500/20" },
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-background/80">
-      <div className="container px-4 mx-auto">
+    <section id="clients" className="py-20 bg-gradient-to-b from-luxury-cream to-background">
+      <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            Our <span className="text-luxury-gold">Clients</span>
+          <h2 className="text-3xl md:text-5xl font-bold text-luxury-navy mb-6">
+            Our Prestigious Clients
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Trusted by leading organizations across hospitality, telecommunications, and government sectors
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Trusted by leading organizations across Pakistan to deliver excellence in design and construction
           </p>
         </div>
 
@@ -63,15 +63,43 @@ const Clients = () => {
           {clients.map((client, index) => (
             <div
               key={index}
-              className="flex items-center justify-center p-6 bg-card/50 rounded-lg hover:bg-card transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              className="group relative overflow-hidden rounded-xl bg-white p-6 shadow-card hover:shadow-luxury transition-all duration-500 hover:-translate-y-2"
             >
-              <img
-                src={client.logo}
-                alt={client.name}
-                className="max-w-full h-auto max-h-20 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-              />
+              {/* Animated gradient background */}
+              <div className={`absolute inset-0 bg-gradient-to-br ${client.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
+              
+              {/* Shine effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+              
+              {/* Logo */}
+              <div className="relative z-10 flex items-center justify-center h-20">
+                <img
+                  src={client.logo}
+                  alt={client.name}
+                  className="max-w-full max-h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110"
+                />
+              </div>
+              
+              {/* Border glow effect */}
+              <div className="absolute inset-0 rounded-xl border-2 border-transparent group-hover:border-luxury-gold/50 transition-all duration-500"></div>
             </div>
           ))}
+        </div>
+
+        {/* Stats Section */}
+        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="text-center p-6 rounded-xl bg-gradient-to-br from-luxury-navy/5 to-luxury-gold/5 border border-luxury-gold/20">
+            <div className="text-4xl font-bold text-luxury-navy mb-2">22+</div>
+            <div className="text-muted-foreground font-medium">Trusted Partners</div>
+          </div>
+          <div className="text-center p-6 rounded-xl bg-gradient-to-br from-luxury-gold/5 to-luxury-navy/5 border border-luxury-navy/20">
+            <div className="text-4xl font-bold text-luxury-navy mb-2">100%</div>
+            <div className="text-muted-foreground font-medium">Client Satisfaction</div>
+          </div>
+          <div className="text-center p-6 rounded-xl bg-gradient-to-br from-luxury-navy/5 to-luxury-gold/5 border border-luxury-gold/20">
+            <div className="text-4xl font-bold text-luxury-navy mb-2">30+</div>
+            <div className="text-muted-foreground font-medium">Years Excellence</div>
+          </div>
         </div>
       </div>
     </section>
