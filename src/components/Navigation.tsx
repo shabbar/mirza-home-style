@@ -19,8 +19,8 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl md:text-4xl font-extrabold bg-gradient-to-r from-luxury-navy via-luxury-gold to-luxury-navy bg-clip-text text-transparent hover:scale-105 transition-transform duration-300 cursor-pointer drop-shadow-lg">
-              S.A. Mirza Enterprises
+            <h1 className="text-xl md:text-2xl font-bold text-luxury-navy hover:scale-105 transition-transform duration-300 cursor-pointer">
+              <span className="text-luxury-gold">S.A.</span> Mirza Enterprises
             </h1>
           </div>
 
