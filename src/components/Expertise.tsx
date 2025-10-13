@@ -31,14 +31,14 @@ const Expertise = () => {
   ];
 
   const expertise = [
-    "Space Planning & Optimization",
-    "Luxury Material Selection",
-    "Custom Furniture Design",
-    "3D Visualization & Rendering",
-    "Project Management",
-    "Budget Planning & Control",
-    "Sustainable Design Solutions",
-    "Smart Home Integration"
+    "Civil Works & Interior Design",
+    "Furniture Manufacturing",
+    "Flooring & Wall Finishes",
+    "Glass Works",
+    "Specialized Joinery",
+    "Electrical & HVAC Systems",
+    "Plumbing & Allied Services",
+    "General Order & Suppliers"
   ];
 
   return (
@@ -51,11 +51,17 @@ const Expertise = () => {
               <h2 className="text-3xl md:text-5xl font-bold text-luxury-navy mb-6">
                 Our Expertise & Experience
               </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                For more than three decades, S.A. Mirza Enterprises has been redefining interiors with a perfect balance of creativity, craftsmanship, and technical excellence. We are trusted for delivering exceptional spaces that not only meet but consistently exceed client expectations.
+              </p>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                With over two decades in the interior design industry, S.A. Mirza Enterprises
-                has built a reputation for delivering exceptional results that exceed client expectations.
-                Our team combines creative vision with technical expertise to create spaces that are both
-                beautiful and functional.
+                Our strength lies in combining innovative design vision with practical expertise, ensuring every project is both beautiful and functional. From concept to completion, we manage every detail with precision, passion, and professionalism.
+              </p>
+              <h3 className="text-2xl font-bold text-luxury-navy mb-4">
+                One-Stop Turnkey Solutions
+              </h3>
+              <p className="text-base text-muted-foreground leading-relaxed mb-6">
+                Why deal with five different vendors when you can rely on S.A. Mirza Enterprises (Pvt.) Ltd. for a complete one-window solution? With decades of proven expertise, we specialize in delivering end-to-end turnkey projects, managing every detail with responsibility and precision.
               </p>
             </div>
 
@@ -103,12 +109,14 @@ const Expertise = () => {
 
         {/* Quote Section */}
         <div className="mt-20 text-center max-w-4xl mx-auto">
+          <p className="text-lg text-muted-foreground mb-6">
+            ✨ We don't just design spaces—we create experiences that inspire.
+          </p>
           <blockquote className="text-xl md:text-2xl font-medium text-luxury-navy italic leading-relaxed">
-            "Our mission is to transform spaces into extraordinary environments that reflect
-            our clients' personalities while enhancing their daily lives through thoughtful design."
+            "Our mission is simple yet profound: to transform spaces into extraordinary environments that reflect the individuality of our clients while enriching their everyday lives through thoughtful, timeless design."
           </blockquote>
           <cite className="block mt-6 text-luxury-gold font-semibold">
-            — S.A. Mirza, Founder & Principal Designer
+            — Sikander Ali Mirza, Founder
           </cite>
         </div>
       </div>
