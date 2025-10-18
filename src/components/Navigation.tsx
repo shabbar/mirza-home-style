@@ -10,6 +10,7 @@ const Navigation = () => {
     { label: "Services", href: "#services" },
     { label: "Our Expertise", href: "#expertise" },
     { label: "Projects", href: "#projects" },
+    { label: "Completed Projects", href: "#completed-projects" },
     { label: "Contact", href: "#contact" },
   ];
 
