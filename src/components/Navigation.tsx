@@ -26,8 +26,8 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+          <div className="flex-1">
+            <div className="flex items-center justify-end space-x-8">
               {menuItems.map((item) => (
                 <a
                   key={item.label}
@@ -39,13 +39,6 @@ const Navigation = () => {
                 </a>
               ))}
             </div>
-          </div>
-
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Button variant="gold" size="sm" className="shadow-gold hover:shadow-lg transition-all duration-300 hover:scale-105">
-              Get Quote
-            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -74,11 +67,6 @@ const Navigation = () => {
                   {item.label}
                 </a>
               ))}
-              <div className="px-3 py-2">
-                <Button variant="gold" size="sm" className="w-full">
-                  Get Quote
-                </Button>
-              </div>
             </div>
           </div>
         )}
