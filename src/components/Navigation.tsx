@@ -17,22 +17,22 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/98 backdrop-blur-lg border-b border-luxury-gold/20 shadow-md">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <h1 className="text-xl md:text-2xl font-bold text-luxury-gold hover:scale-105 transition-transform duration-300 cursor-pointer">
+        <div className="flex items-center justify-center md:justify-between h-16 md:h-20">
+          {/* Logo - Centered on mobile */}
+          <div className="flex-shrink-0 text-center md:text-left">
+            <h1 className="text-lg md:text-2xl font-bold text-luxury-gold hover:scale-105 transition-transform duration-300 cursor-pointer">
               S.A. Mirza Enterprises
             </h1>
           </div>
 
-          {/* Desktop Menu */}
-          <div className="flex-1">
-            <div className="flex items-center justify-end space-x-8">
+          {/* Desktop Menu - Hidden on mobile */}
+          <div className="hidden md:flex flex-1">
+            <div className="flex items-center justify-end space-x-6 lg:space-x-8">
               {menuItems.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
-                  className="relative text-foreground hover:text-luxury-gold transition-all duration-300 font-semibold text-base md:text-lg group"
+                  className="relative text-foreground hover:text-luxury-gold transition-all duration-300 font-semibold text-sm lg:text-base group whitespace-nowrap"
                 >
                   {item.label}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-gold transition-all duration-300 group-hover:w-full"></span>
@@ -41,8 +41,8 @@ const Navigation = () => {
             </div>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Mobile menu button - Centered */}
+          <div className="md:hidden absolute right-4">
             <Button
               variant="ghost"
               size="icon"

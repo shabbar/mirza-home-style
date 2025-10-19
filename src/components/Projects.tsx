@@ -95,7 +95,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-b from-background to-background/80">
+    <section id="projects" className="py-12 md:py-16 bg-gradient-to-b from-background to-background/80">
       <div className="container px-4 mx-auto">
         {/* Header */}
         <div className="text-center mb-16">

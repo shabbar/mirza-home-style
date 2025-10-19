@@ -42,10 +42,10 @@ const ProjectSlider = () => {
   ];
 
   return (
-    <section className="relative w-full h-[70vh] md:h-[80vh] overflow-hidden bg-background mt-20">
+    <section className="relative w-full h-[50vh] md:h-[60vh] lg:h-[70vh] overflow-hidden bg-background mt-16 md:mt-20">
       <Carousel
         opts={{
-          align: "start",
+          align: "center",
           loop: true,
         }}
         plugins={[
@@ -56,21 +56,21 @@ const ProjectSlider = () => {
         ]}
         className="w-full h-full"
       >
-        <CarouselContent className="h-full">
+        <CarouselContent className="h-full -ml-4">
           {projectImages.map((image, index) => (
-            <CarouselItem key={index} className="relative h-full">
+            <CarouselItem key={index} className="relative h-full pl-4">
               <div className="relative w-full h-full">
                 <img
                   src={image.src}
                   alt={image.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-center"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
-                  <h3 className="text-3xl md:text-5xl font-bold text-white drop-shadow-lg">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 md:p-8">
+                  <h3 className="text-xl md:text-3xl lg:text-4xl font-bold text-white drop-shadow-lg">
                     {image.title}
                   </h3>
-                  <p className="text-lg md:text-xl text-white/90 mt-2">
+                  <p className="text-sm md:text-lg text-white/90 mt-1 md:mt-2">
                     Excellence in Design & Execution
                   </p>
                 </div>
