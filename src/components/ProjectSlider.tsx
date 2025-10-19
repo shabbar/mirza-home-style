@@ -8,37 +8,33 @@ import { type CarouselApi } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
 // Import project images
-import marriott1 from "@/assets/projects/marriott-1.jpg";
-import marriott2 from "@/assets/projects/marriott-2.jpg";
-import marriott3 from "@/assets/projects/marriott-3.jpg";
-import mindstir1 from "@/assets/projects/mindstir-1.jpg";
-import mindstir2 from "@/assets/projects/mindstir-2.jpg";
-import mindstir3 from "@/assets/projects/mindstir-3.jpg";
-import paf1 from "@/assets/projects/paf-1.jpg";
-import paf2 from "@/assets/projects/paf-2.jpg";
-import pcLegacy1 from "@/assets/projects/pc-legacy-1.jpg";
-import pcLegacy2 from "@/assets/projects/pc-legacy-2.jpg";
-import telenor1 from "@/assets/projects/telenor-1.jpg";
-import telenor2 from "@/assets/projects/telenor-2.jpg";
-import pearls1 from "@/assets/projects/10pearls-1.jpg";
-import pearls2 from "@/assets/projects/10pearls-2.jpg";
+import marriott4 from "@/assets/projects/marriott-4.jpg";
+import marriott5 from "@/assets/projects/marriott-5.jpg";
+import marriott6 from "@/assets/projects/marriott-6.jpg";
+import mindstir5 from "@/assets/projects/mindstir-5.jpg";
+import mindstir7 from "@/assets/projects/mindstir-7.jpg";
+import mindstir9 from "@/assets/projects/mindstir-9.jpg";
+import paf3 from "@/assets/projects/paf-3.jpg";
+import paf4 from "@/assets/projects/paf-4.jpg";
+import pcLegacy4 from "@/assets/projects/pc-legacy-4.jpg";
+import pcLegacy5 from "@/assets/projects/pc-legacy-5.jpg";
+import telenor3 from "@/assets/projects/telenor-3.jpg";
+import mindstir11 from "@/assets/projects/mindstir-11.jpg";
 
 const ProjectSlider = () => {
   const projectImages = [
-    { src: marriott1, title: "Marriott Hotel Project" },
-    { src: marriott2, title: "Marriott Hotel Interior" },
-    { src: marriott3, title: "Marriott Hotel Design" },
-    { src: mindstir1, title: "Mindstir Office" },
-    { src: mindstir2, title: "Mindstir Workspace" },
-    { src: mindstir3, title: "Mindstir Interior" },
-    { src: paf1, title: "PAF Project" },
-    { src: paf2, title: "PAF Interior Design" },
-    { src: pcLegacy1, title: "PC Legacy Hotel" },
-    { src: pcLegacy2, title: "PC Legacy Design" },
-    { src: telenor1, title: "Telenor Office" },
-    { src: telenor2, title: "Telenor Workspace" },
-    { src: pearls1, title: "10 Pearls Office" },
-    { src: pearls2, title: "10 Pearls Interior" },
+    { src: marriott4, title: "Marriott Hotel - Grand Lobby" },
+    { src: marriott5, title: "Marriott Hotel - Executive Suite" },
+    { src: marriott6, title: "Marriott Hotel - Conference Hall" },
+    { src: mindstir5, title: "Mindstir - Modern Workspace" },
+    { src: mindstir7, title: "Mindstir - Collaborative Zone" },
+    { src: mindstir9, title: "Mindstir - Executive Office" },
+    { src: paf3, title: "PAF - Interior Excellence" },
+    { src: paf4, title: "PAF - Premium Design" },
+    { src: pcLegacy4, title: "PC Legacy Hotel - Luxury Suite" },
+    { src: pcLegacy5, title: "PC Legacy Hotel - Dining" },
+    { src: telenor3, title: "Telenor - Corporate Office" },
+    { src: mindstir11, title: "Premium Interior Design" },
   ];
 
   return (

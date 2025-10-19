@@ -39,7 +39,11 @@ const Index = () => {
         </div>
       )}
       
-      {showCompletedProjects && <CompletedProjects />}
+      {showCompletedProjects && (
+        <div id="portfolio">
+          <CompletedProjects />
+        </div>
+      )}
       
       <Clients />
       <Contact />

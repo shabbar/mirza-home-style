@@ -48,7 +48,7 @@ const Clients = () => {
   ];
 
   return (
-    <section id="clients" className="py-20 bg-gradient-to-b from-luxury-cream to-background">
+    <section id="clients" className="py-8 md:py-12 bg-gradient-to-br from-muted/20 to-background">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold text-luxury-navy mb-6">

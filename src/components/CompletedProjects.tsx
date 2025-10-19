@@ -127,7 +127,7 @@ const CompletedProjects = () => {
   ];
 
   return (
-    <section id="completed-projects" className="py-12 md:py-16 bg-gradient-to-b from-background via-background/95 to-background">
+    <section className="py-8 md:py-12 bg-gradient-to-br from-accent/30 to-muted/20">
       <div className="container px-4 mx-auto">
         {/* Header */}
         <div className="text-center mb-16 space-y-4">

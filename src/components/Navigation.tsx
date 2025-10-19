@@ -10,7 +10,7 @@ const Navigation = () => {
     { label: "Services", href: "#services" },
     { label: "Our Expertise", href: "#expertise" },
     { label: "Projects", href: "#projects" },
-    { label: "Completed Projects", href: "#completed-projects" },
+    { label: "Portfolio", href: "#portfolio" },
     { label: "Contact", href: "#contact" },
   ];
 
@@ -26,16 +26,16 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Menu - Hidden on mobile */}
-          <div className="hidden md:flex flex-1">
-            <div className="flex items-center justify-end space-x-6 lg:space-x-8">
+          <div className="hidden md:flex flex-1 justify-end">
+            <div className="flex items-center space-x-6 lg:space-x-8">
               {menuItems.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
-                  className="relative text-foreground hover:text-luxury-gold transition-all duration-300 font-semibold text-sm lg:text-base group whitespace-nowrap"
+                  className="relative text-foreground hover:text-luxury-gold transition-all duration-300 font-medium text-sm lg:text-base group whitespace-nowrap"
                 >
                   {item.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-gold transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-luxury-gold transition-all duration-300 group-hover:w-full"></span>
                 </a>
               ))}
             </div>
