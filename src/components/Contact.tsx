@@ -21,7 +21,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Office",
-      details: ["Islamabad, Pakistan"],
+      details: ["Plot No.243, Street No.8", "Sector I-9/3 Industrial Area", "Islamabad, Pakistan"],
       description: "Visit our design studio"
     },
     {
@@ -139,15 +139,18 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Map Placeholder */}
+            {/* Map */}
             <Card className="overflow-hidden">
-              <div className="h-64 bg-gradient-luxury flex items-center justify-center">
-                <div className="text-center text-white">
-                  <MapPin className="w-12 h-12 mx-auto mb-4" />
-                  <h4 className="font-bold text-lg">Visit Our Studio</h4>
-                  <p className="text-sm opacity-90">Schedule an appointment to see our work</p>
-                </div>
-              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.5742686844547!2d73.0287!3d33.6844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDQxJzAzLjgiTiA3M8KwMDEnNDMuMyJF!5e0!3m2!1sen!2s!4v1234567890"
+                width="100%"
+                height="320"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="SAM Enterprises Office Location"
+              />
             </Card>
 
             <div className="text-center">
