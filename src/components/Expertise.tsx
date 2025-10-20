@@ -76,8 +76,14 @@ const Expertise = () => {
             </div>
 
             <div className="pt-6">
-              <Button variant="luxury" size="lg">
-                Learn About Our Process
+              <Button 
+                variant="luxury" 
+                size="lg"
+                onClick={() => {
+                  window.location.href = '#contact';
+                }}
+              >
+                Discuss Your Project
               </Button>
             </div>
           </div>

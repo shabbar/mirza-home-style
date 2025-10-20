@@ -8,29 +8,29 @@ All colors MUST be HSL for luxury interior design aesthetic.
 
 @layer base {
   :root {
-    --background: 0 0% 99%;
-    --foreground: 220 27% 15%;
+    --background: 35 25% 96%;
+    --foreground: 220 40% 25%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 27% 15%;
+    --card-foreground: 220 40% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 27% 15%;
+    --popover-foreground: 220 40% 25%;
 
     /* Deep navy primary for sophistication */
     --primary: 220 40% 25%;
-    --primary-foreground: 0 0% 98%;
+    --primary-foreground: 45 90% 92%;
 
     /* Warm gold for luxury accents */
     --secondary: 40 85% 65%;
     --secondary-foreground: 220 40% 25%;
 
     /* Soft neutrals */
-    --muted: 210 20% 96%;
-    --muted-foreground: 220 15% 55%;
+    --muted: 45 90% 92%;
+    --muted-foreground: 220 40% 25%;
 
     /* Light gold accent */
-    --accent: 45 90% 92%;
+    --accent: 40 85% 65%;
     --accent-foreground: 220 40% 25%;
 
     --destructive: 0 84.2% 60.2%;

@@ -89,7 +89,13 @@ const Services = () => {
 
         {/* CTA */}
         <div className="text-center mt-16">
-          <Button variant="luxury" size="lg">
+          <Button 
+            variant="luxury" 
+            size="lg"
+            onClick={() => {
+              window.location.href = '#contact';
+            }}
+          >
             Discuss Your Project
           </Button>
         </div>
