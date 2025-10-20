@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import ProjectSlider from "@/components/ProjectSlider";
 import Hero from "@/components/Hero";
@@ -14,6 +14,24 @@ import { ChevronDown } from "lucide-react";
 
 const Index = () => {
   const [showCompletedProjects, setShowCompletedProjects] = useState(false);
+
+  useEffect(() => {
+    // Listen for portfolio link clicks
+    const handleHashChange = () => {
+      if (window.location.hash === '#portfolio') {
+        setShowCompletedProjects(true);
+        setTimeout(() => {
+          document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    // Check on initial load
+    handleHashChange();
+
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
 
   return (
     <div className="min-h-screen">
