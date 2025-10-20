@@ -16,7 +16,12 @@ const Index = () => {
   const [showCompletedProjects, setShowCompletedProjects] = useState(false);
 
   useEffect(() => {
-    // Listen for portfolio link clicks
+    // Listen for portfolio link clicks via custom event
+    const handleShowPortfolio = () => {
+      setShowCompletedProjects(true);
+    };
+
+    // Listen for hash changes
     const handleHashChange = () => {
       if (window.location.hash === '#portfolio') {
         setShowCompletedProjects(true);
@@ -26,11 +31,15 @@ const Index = () => {
       }
     };
 
+    window.addEventListener('showPortfolio', handleShowPortfolio);
     window.addEventListener('hashchange', handleHashChange);
     // Check on initial load
     handleHashChange();
 
-    return () => window.removeEventListener('hashchange', handleHashChange);
+    return () => {
+      window.removeEventListener('showPortfolio', handleShowPortfolio);
+      window.removeEventListener('hashchange', handleHashChange);
+    };
   }, []);
 
   return (

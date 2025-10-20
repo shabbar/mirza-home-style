@@ -5,6 +5,22 @@ import { Menu, X } from "lucide-react";
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleNavClick = (href: string, e: React.MouseEvent) => {
+    if (href === '#portfolio') {
+      e.preventDefault();
+      // Trigger showing completed projects
+      window.dispatchEvent(new CustomEvent('showPortfolio'));
+      // Then scroll to portfolio
+      setTimeout(() => {
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+    setIsMenuOpen(false);
+  };
+
   const menuItems = [
     { label: "Home", href: "#home" },
     { label: "Services", href: "#services" },
@@ -32,6 +48,7 @@ const Navigation = () => {
                 <a
                   key={item.label}
                   href={item.href}
+                  onClick={(e) => handleNavClick(item.href, e)}
                   className="relative text-foreground hover:text-luxury-gold transition-all duration-300 font-medium text-sm lg:text-base group whitespace-nowrap"
                 >
                   {item.label}
@@ -61,8 +78,8 @@ const Navigation = () => {
                 <a
                   key={item.label}
                   href={item.href}
+                  onClick={(e) => handleNavClick(item.href, e)}
                   className="block px-3 py-2 text-foreground hover:text-luxury-gold transition-colors duration-300"
-                  onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
                 </a>
