@@ -3,50 +3,50 @@ import { Badge } from "@/components/ui/badge";
 import { MapPin } from "lucide-react";
 
 // Telenor
-import telenor1 from "@/assets/projects/telenor-1.jpg";
-import telenor2 from "@/assets/projects/telenor-2.jpg";
-import telenor3 from "@/assets/projects/telenor-3.jpg";
+import telenor1 from "@/assets/projects/telenor-new-1.jpg";
+import telenor2 from "@/assets/projects/telenor-new-2.jpg";
+import telenor3 from "@/assets/projects/telenor-new-3.jpg";
+import telenor4 from "@/assets/projects/telenor-new-4.jpg";
 
 // 10 Pearls
-import pearls1 from "@/assets/projects/10pearls-1.jpg";
-import pearls2 from "@/assets/projects/10pearls-2.jpg";
+import pearls1 from "@/assets/projects/10pearls-new-1.jpg";
+import pearls2 from "@/assets/projects/10pearls-new-2.jpg";
 
 // Marriott
-import marriott1 from "@/assets/projects/marriott-1.jpg";
-import marriott2 from "@/assets/projects/marriott-2.jpg";
-import marriott3 from "@/assets/projects/marriott-3.jpg";
-import marriott4 from "@/assets/projects/marriott-4.jpg";
-import marriott5 from "@/assets/projects/marriott-5.jpg";
-import marriott6 from "@/assets/projects/marriott-6.jpg";
-import marriott7 from "@/assets/projects/marriott-7.jpg";
+import marriott1 from "@/assets/projects/marriott-new-1.jpg";
+import marriott2 from "@/assets/projects/marriott-new-2.jpg";
+import marriott3 from "@/assets/projects/marriott-new-3.jpg";
+import marriott4 from "@/assets/projects/marriott-new-4.jpg";
+import marriott5 from "@/assets/projects/marriott-new-5.jpg";
+import marriott6 from "@/assets/projects/marriott-new-6.jpg";
 
 // PC Legacy
-import pcLegacy1 from "@/assets/projects/pc-legacy-1.jpg";
-import pcLegacy2 from "@/assets/projects/pc-legacy-2.jpg";
-import pcLegacy3 from "@/assets/projects/pc-legacy-3.jpg";
-import pcLegacy4 from "@/assets/projects/pc-legacy-4.jpg";
-import pcLegacy5 from "@/assets/projects/pc-legacy-5.jpg";
-import pcLegacy6 from "@/assets/projects/pc-legacy-6.jpg";
+import pcLegacy1 from "@/assets/projects/pc-legacy-new-1.jpg";
+import pcLegacy2 from "@/assets/projects/pc-legacy-new-2.jpg";
+import pcLegacy3 from "@/assets/projects/pc-legacy-new-3.jpg";
+import pcLegacy4 from "@/assets/projects/pc-legacy-new-4.jpg";
+import pcLegacy5 from "@/assets/projects/pc-legacy-new-5.jpg";
+import pcLegacy6 from "@/assets/projects/pc-legacy-new-6.jpg";
 
 // PAF
-import paf1 from "@/assets/projects/paf-1.jpg";
-import paf2 from "@/assets/projects/paf-2.jpg";
-import paf3 from "@/assets/projects/paf-3.jpg";
-import paf4 from "@/assets/projects/paf-4.jpg";
+import paf1 from "@/assets/projects/paf-new-1.jpg";
+import paf2 from "@/assets/projects/paf-new-2.jpg";
+import paf3 from "@/assets/projects/paf-new-3.jpg";
+import paf4 from "@/assets/projects/paf-new-4.jpg";
 
 // Mindstir
-import mindstir1 from "@/assets/projects/mindstir-1.jpg";
-import mindstir2 from "@/assets/projects/mindstir-2.jpg";
-import mindstir3 from "@/assets/projects/mindstir-3.jpg";
-import mindstir4 from "@/assets/projects/mindstir-4.jpg";
-import mindstir5 from "@/assets/projects/mindstir-5.jpg";
-import mindstir6 from "@/assets/projects/mindstir-6.jpg";
-import mindstir7 from "@/assets/projects/mindstir-7.jpg";
-import mindstir8 from "@/assets/projects/mindstir-8.jpg";
-import mindstir9 from "@/assets/projects/mindstir-9.jpg";
-import mindstir10 from "@/assets/projects/mindstir-10.jpg";
-import mindstir11 from "@/assets/projects/mindstir-11.jpg";
-import mindstir12 from "@/assets/projects/mindstir-12.jpg";
+import mindstir1 from "@/assets/projects/mindstir-new-1.jpg";
+import mindstir2 from "@/assets/projects/mindstir-new-2.jpg";
+import mindstir3 from "@/assets/projects/mindstir-new-3.jpg";
+import mindstir4 from "@/assets/projects/mindstir-new-4.jpg";
+import mindstir5 from "@/assets/projects/mindstir-new-5.jpg";
+import mindstir6 from "@/assets/projects/mindstir-new-6.jpg";
+import mindstir7 from "@/assets/projects/mindstir-new-7.jpg";
+import mindstir8 from "@/assets/projects/mindstir-new-8.jpg";
+import mindstir9 from "@/assets/projects/mindstir-new-9.jpg";
+import mindstir10 from "@/assets/projects/mindstir-new-10.jpg";
+import mindstir11 from "@/assets/projects/mindstir-new-11.jpg";
+import mindstir12 from "@/assets/projects/mindstir-new-12.jpg";
 
 const Projects = () => {
   const projects = [
@@ -54,11 +54,11 @@ const Projects = () => {
       title: "Telenor Shared Services",
       location: "AJ Tower, Gulberg Greens, Islamabad",
       category: "Corporate Office",
-      description: "Development of TSS new office - A modern corporate workspace featuring state-of-the-art facilities and contemporary design elements.",
-      images: [telenor1, telenor2, telenor3],
+      description: "Development of TSS new office at AJ Tower, Gulberg Greens Islamabad - A modern corporate workspace featuring state-of-the-art facilities and contemporary design elements.",
+      images: [telenor1, telenor2, telenor3, telenor4],
     },
     {
-      title: "10 Pearls Office",
+      title: "Development of 10 Pearls Office, NASTP Karachi",
       location: "NASTP, Karachi",
       category: "Corporate Office",
       description: "Complete development and interior design of 10 Pearls office space, creating an innovative and collaborative work environment.",
@@ -69,24 +69,24 @@ const Projects = () => {
       location: "Islamabad",
       category: "Hospitality",
       description: "Luxury hotel interior design and renovation project, delivering world-class hospitality spaces with elegant finishes and sophisticated ambiance.",
-      images: [marriott1, marriott2, marriott3, marriott4, marriott5, marriott6, marriott7],
+      images: [marriott1, marriott2, marriott3, marriott4, marriott5, marriott6],
     },
     {
-      title: "PC Legacy Hotel",
+      title: "PC Legacy Hotel, Nasirabad Hunza",
       location: "Nasirabad, Hunza",
       category: "Hospitality",
       description: "Complete turnkey project for PC Legacy Hotel, inaugurated by Mr. Murtaza Hashwani, Deputy Chairman & CEO, Hashoo Group. A premium hospitality destination in the stunning Hunza valley.",
       images: [pcLegacy1, pcLegacy2, pcLegacy3, pcLegacy4, pcLegacy5, pcLegacy6],
     },
     {
-      title: "PAF ACE Management School",
-      location: "PAF Sargodha",
+      title: "Renovation of Auditorium and Arbor Lobby",
+      location: "PAF ACE Management School, Sargodha",
       category: "Institutional",
       description: "Renovation of Auditorium and Arbor Lobby at PAF ACE Management School, combining functional design with institutional excellence.",
       images: [paf1, paf2, paf3, paf4],
     },
     {
-      title: "Mindstir Office",
+      title: "Development of MINDSTIR Office (Blue Area Islamabad)",
       location: "Blue Area, Islamabad",
       category: "Corporate Office",
       description: "Premium serviced offices, coworking and event spaces featuring modern design, meeting rooms, and board rooms. A vibrant workspace designed to inspire innovation and collaboration.",
