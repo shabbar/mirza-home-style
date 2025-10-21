@@ -37,7 +37,7 @@ const Navigation = () => {
           {/* Logo - Centered on mobile */}
           <div className="flex-shrink-0 text-center md:text-left">
             <h1 className="text-lg md:text-2xl font-bold text-luxury-gold hover:scale-105 transition-transform duration-300 cursor-pointer">
-              S.A. Mirza Enterprises
+              SAM Enterprises
             </h1>
           </div>
 
