@@ -48,6 +48,17 @@ import mindstir10 from "@/assets/projects/mindstir-new-10.jpg";
 import mindstir11 from "@/assets/projects/mindstir-new-11.jpg";
 import mindstir12 from "@/assets/projects/mindstir-new-12.jpg";
 
+// Jazz
+import jazz1 from "@/assets/projects/jazz-1.jpg";
+import jazz2 from "@/assets/projects/jazz-2.jpg";
+import jazz3 from "@/assets/projects/jazz-3.jpg";
+import jazz4 from "@/assets/projects/jazz-4.jpg";
+
+// Zong
+import zong1 from "@/assets/projects/zong-1.jpg";
+import zong2 from "@/assets/projects/zong-2.jpg";
+import zong3 from "@/assets/projects/zong-3.jpg";
+
 const Projects = () => {
   const projects = [
     {
@@ -85,6 +96,26 @@ const Projects = () => {
       description: "Renovation of Auditorium and Arbor Lobby at PAF ACE Management School, combining functional design with institutional excellence.",
       images: [paf1, paf2, paf3, paf4],
     },
+  ];
+
+  const telecomProjects = [
+    {
+      title: "Jazz",
+      location: "Pakistan",
+      category: "Telecommunications",
+      description: "Corporate office design and development for Jazz, Pakistan's leading digital operator.",
+      images: [jazz1, jazz2, jazz3, jazz4],
+    },
+    {
+      title: "Zong",
+      location: "Pakistan",
+      category: "Telecommunications",
+      description: "Office development and interior design for Zong, delivering modern workspace solutions.",
+      images: [zong1, zong2, zong3],
+    },
+  ];
+
+  const coworkingProjects = [
     {
       title: "Development of MINDSTIR Office (Blue Area Islamabad)",
       location: "Blue Area, Islamabad",
@@ -107,7 +138,7 @@ const Projects = () => {
           </p>
         </div>
 
-        {/* Projects Grid */}
+        {/* Main Projects Grid */}
         <div className="space-y-20">
           {projects.map((project, index) => (
             <div key={index} className="space-y-6">
@@ -149,6 +180,112 @@ const Projects = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Telecommunications Projects Section */}
+        <div className="mt-24">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-3">
+              Telecommunications <span className="text-luxury-gold">Projects</span>
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Leading telecom workspace solutions across Pakistan
+            </p>
+          </div>
+          
+          <div className="space-y-20">
+            {telecomProjects.map((project, index) => (
+              <div key={index} className="space-y-6">
+                <div className="space-y-3">
+                  <div className="flex flex-wrap items-center gap-3">
+                    <Badge variant="outline" className="text-luxury-gold border-luxury-gold">
+                      {project.category}
+                    </Badge>
+                    <div className="flex items-center text-muted-foreground text-sm">
+                      <MapPin className="w-4 h-4 mr-1" />
+                      {project.location}
+                    </div>
+                  </div>
+                  <h3 className="text-2xl md:text-3xl font-bold">{project.title}</h3>
+                  <p className="text-muted-foreground max-w-3xl">{project.description}</p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {project.images.map((image, imgIndex) => (
+                    <Card
+                      key={imgIndex}
+                      className="overflow-hidden group hover:shadow-xl transition-all duration-300"
+                    >
+                      <CardContent className="p-0">
+                        <div className="relative aspect-[4/3] overflow-hidden">
+                          <img
+                            src={image}
+                            alt={`${project.title} - Image ${imgIndex + 1}`}
+                            className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                            loading="lazy"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                        </div>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Coworking & Event Spaces Section */}
+        <div className="mt-24">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-3">
+              Coworking & Event <span className="text-luxury-gold">Spaces</span>
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Innovative collaborative workspaces designed for the modern professional
+            </p>
+          </div>
+          
+          <div className="space-y-20">
+            {coworkingProjects.map((project, index) => (
+              <div key={index} className="space-y-6">
+                <div className="space-y-3">
+                  <div className="flex flex-wrap items-center gap-3">
+                    <Badge variant="outline" className="text-luxury-gold border-luxury-gold">
+                      {project.category}
+                    </Badge>
+                    <div className="flex items-center text-muted-foreground text-sm">
+                      <MapPin className="w-4 h-4 mr-1" />
+                      {project.location}
+                    </div>
+                  </div>
+                  <h3 className="text-2xl md:text-3xl font-bold">{project.title}</h3>
+                  <p className="text-muted-foreground max-w-3xl">{project.description}</p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {project.images.map((image, imgIndex) => (
+                    <Card
+                      key={imgIndex}
+                      className="overflow-hidden group hover:shadow-xl transition-all duration-300"
+                    >
+                      <CardContent className="p-0">
+                        <div className="relative aspect-[4/3] overflow-hidden">
+                          <img
+                            src={image}
+                            alt={`${project.title} - Image ${imgIndex + 1}`}
+                            className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                            loading="lazy"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                        </div>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
