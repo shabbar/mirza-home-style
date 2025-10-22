@@ -1,10 +1,8 @@
-import { useEffect } from "react";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import { type CarouselApi } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
 // Import project images - PC Legacy Hotel
@@ -52,15 +50,15 @@ const ProjectSlider = () => {
       >
         <CarouselContent className="h-full -ml-0">
           {projectImages.map((image, index) => (
-            <CarouselItem key={index} className="relative h-full pl-0 basis-full">
-              <div className="relative w-full h-full">
+            <CarouselItem key={index} className="relative h-full pl-0 basis-full flex items-center justify-center">
+              <div className="relative w-full h-full flex items-center justify-center bg-black">
                 <img
                   src={image.src}
                   alt={image.title}
-                  className="w-full h-full object-cover object-center"
+                  className="max-w-full max-h-full w-auto h-auto object-contain"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent pointer-events-none" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 lg:p-12">
                   <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white drop-shadow-2xl mb-2">
                     {image.title}
