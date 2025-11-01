@@ -55,8 +55,6 @@ import jazz3 from "@/assets/projects/jazz-3.jpg";
 import jazz4 from "@/assets/projects/jazz-4.jpg";
 
 // Zong
-import zong1 from "@/assets/projects/zong-1.jpg";
-import zong2 from "@/assets/projects/zong-2.jpg";
 import zong3 from "@/assets/projects/zong-3.jpg";
 
 const Projects = () => {
@@ -111,7 +109,7 @@ const Projects = () => {
       location: "Pakistan",
       category: "Telecommunications",
       description: "Office development and interior design for Zong, delivering modern workspace solutions.",
-      images: [zong1, zong2, zong3],
+      images: [zong3],
     },
   ];
 
