@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/sam-enterprises-logo.jpg";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,9 +37,13 @@ const Navigation = () => {
         <div className="flex items-center justify-center md:justify-between h-16 md:h-20">
           {/* Logo - Centered on mobile */}
           <div className="flex-shrink-0 text-center md:text-left">
-            <h1 className="text-lg md:text-2xl font-bold text-luxury-gold hover:scale-105 transition-transform duration-300 cursor-pointer">
-              SAM Enterprises
-            </h1>
+            <a href="#home" className="flex items-center gap-3 hover:scale-105 transition-transform duration-300">
+              <img 
+                src={logo} 
+                alt="SAM Enterprises" 
+                className="h-10 md:h-12 w-auto object-contain"
+              />
+            </a>
           </div>
 
           {/* Desktop Menu - Hidden on mobile */}

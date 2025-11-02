@@ -48,7 +48,7 @@ const ProjectSlider = () => {
                 <img
                   src={image.src}
                   alt={image.title}
-                  className="w-full h-full object-cover object-center transition-transform duration-[8000ms] ease-linear hover:scale-105"
+                  className="w-full h-full object-contain object-center transition-transform duration-[8000ms] ease-linear hover:scale-105 bg-black"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
