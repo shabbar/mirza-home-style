@@ -63,25 +63,25 @@ const Clients = () => {
           {clients.map((client, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-xl bg-white p-6 shadow-card hover:shadow-luxury transition-all duration-500 hover:-translate-y-2"
+              className="group relative overflow-hidden rounded-xl bg-gradient-to-br from-white to-gray-50 p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 hover:scale-105"
             >
-              {/* Animated gradient background */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${client.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
+              {/* Vibrant gradient background */}
+              <div className={`absolute inset-0 bg-gradient-to-br ${client.color.replace('/20', '/30')} transition-opacity duration-500`}></div>
               
-              {/* Shine effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+              {/* Animated shine effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
               
-              {/* Logo */}
+              {/* Logo - Always colored */}
               <div className="relative z-10 flex items-center justify-center h-20">
                 <img
                   src={client.logo}
                   alt={client.name}
-                  className="max-w-full max-h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110"
+                  className="max-w-full max-h-full object-contain transition-all duration-500 group-hover:scale-110 drop-shadow-lg"
                 />
               </div>
               
-              {/* Border glow effect */}
-              <div className="absolute inset-0 rounded-xl border-2 border-transparent group-hover:border-luxury-gold/50 transition-all duration-500"></div>
+              {/* Enhanced border glow */}
+              <div className="absolute inset-0 rounded-xl border-2 border-luxury-gold/30 group-hover:border-luxury-gold transition-all duration-500 group-hover:shadow-gold"></div>
             </div>
           ))}
         </div>
