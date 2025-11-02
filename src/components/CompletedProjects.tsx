@@ -140,11 +140,7 @@ const CompletedProjects = () => {
           <div className="flex flex-wrap justify-center gap-4 pt-4">
             <Badge variant="outline" className="text-base px-4 py-2 border-luxury-gold/50">
               <Building2 className="w-4 h-4 mr-2 text-luxury-gold" />
-              {allProjects.length}+ Projects
-            </Badge>
-            <Badge variant="outline" className="text-base px-4 py-2 border-luxury-gold/50">
-              <Calendar className="w-4 h-4 mr-2 text-luxury-gold" />
-              Since 1999
+              100+ Projects
             </Badge>
           </div>
         </div>

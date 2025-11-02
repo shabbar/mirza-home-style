@@ -89,7 +89,7 @@ const Clients = () => {
         {/* Stats Section */}
         <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <div className="text-center p-6 rounded-xl bg-gradient-to-br from-luxury-navy/5 to-luxury-gold/5 border border-luxury-gold/20">
-            <div className="text-4xl font-bold text-luxury-navy mb-2">22+</div>
+            <div className="text-4xl font-bold text-luxury-navy mb-2">30+</div>
             <div className="text-muted-foreground font-medium">Trusted Partners</div>
           </div>
           <div className="text-center p-6 rounded-xl bg-gradient-to-br from-luxury-gold/5 to-luxury-navy/5 border border-luxury-navy/20">

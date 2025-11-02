@@ -28,7 +28,7 @@ const Hero = () => {
               <div className="text-xs md:text-sm text-muted-foreground font-medium">Years Experience</div>
             </div>
             <div className="text-center p-4 rounded-lg bg-white/80 backdrop-blur-sm shadow-card border border-luxury-gold/10 hover:shadow-gold transition-all">
-              <div className="text-3xl md:text-4xl font-bold text-luxury-gold mb-1">500+</div>
+              <div className="text-3xl md:text-4xl font-bold text-luxury-gold mb-1">100+</div>
               <div className="text-xs md:text-sm text-muted-foreground font-medium">Projects Completed</div>
             </div>
             <div className="text-center p-4 rounded-lg bg-white/80 backdrop-blur-sm shadow-card border border-luxury-gold/10 hover:shadow-gold transition-all">

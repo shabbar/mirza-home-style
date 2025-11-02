@@ -89,9 +89,9 @@ const Projects = () => {
     },
     {
       title: "Renovation of Auditorium and Arbor Lobby",
-      location: "PAF ACE Management School, Sargodha",
+      location: "PAF Base Sargodha",
       category: "Institutional",
-      description: "Renovation of Auditorium and Arbor Lobby at PAF ACE Management School, combining functional design with institutional excellence.",
+      description: "Renovation of Auditorium and Arbor Lobby at PAF Base Sargodha, combining functional design with institutional excellence.",
       images: [paf1, paf2, paf3, paf4],
     },
   ];
