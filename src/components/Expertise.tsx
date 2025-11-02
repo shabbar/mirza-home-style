@@ -6,15 +6,15 @@ const Expertise = () => {
   const achievements = [
     {
       icon: Users,
-      number: "500+",
-      label: "Happy Clients",
-      description: "Satisfied customers across residential and commercial projects"
+      number: "30+",
+      label: "Trusted Partners",
+      description: "Leading organizations trust us for exceptional design and construction"
     },
     {
       icon: Award,
-      number: "20+",
+      number: "30+",
       label: "Years Experience",
-      description: "Two decades of excellence in interior design industry"
+      description: "Three decades of excellence in architecture and interior design"
     },
     {
       icon: CheckCircle,
