@@ -37,18 +37,10 @@ import paf3 from "@/assets/projects/paf-new-3.jpg";
 import paf4 from "@/assets/projects/paf-new-4.jpg";
 
 // Mindstir
-import mindstir1 from "@/assets/projects/mindstir-new-1.jpg";
-import mindstir2 from "@/assets/projects/mindstir-new-2.jpg";
-import mindstir3 from "@/assets/projects/mindstir-new-3.jpg";
-import mindstir4 from "@/assets/projects/mindstir-new-4.jpg";
-import mindstir5 from "@/assets/projects/mindstir-new-5.jpg";
-import mindstir6 from "@/assets/projects/mindstir-new-6.jpg";
-import mindstir7 from "@/assets/projects/mindstir-new-7.jpg";
-import mindstir8 from "@/assets/projects/mindstir-new-8.jpg";
-import mindstir9 from "@/assets/projects/mindstir-new-9.jpg";
-import mindstir10 from "@/assets/projects/mindstir-new-10.jpg";
-import mindstir11 from "@/assets/projects/mindstir-new-11.jpg";
-import mindstir12 from "@/assets/projects/mindstir-new-12.jpg";
+import mindstir1 from "@/assets/projects/mindstir-latest-1.jpg";
+import mindstir2 from "@/assets/projects/mindstir-latest-2.jpg";
+import mindstir3 from "@/assets/projects/mindstir-latest-3.jpg";
+import mindstir4 from "@/assets/projects/mindstir-latest-4.jpg";
 
 // Jazz
 import jazzNew1 from "@/assets/projects/jazz-new-1.jpg";
@@ -121,7 +113,7 @@ const Projects = () => {
       location: "Blue Area, Islamabad",
       category: "Corporate Office",
       description: "Premium serviced offices, coworking and event spaces featuring modern design, meeting rooms, and board rooms. A vibrant workspace designed to inspire innovation and collaboration.",
-      images: [mindstir1, mindstir2, mindstir3, mindstir4, mindstir5, mindstir6, mindstir7, mindstir8, mindstir9, mindstir10, mindstir11, mindstir12],
+      images: [mindstir1, mindstir2, mindstir3, mindstir4],
     },
   ];
 
