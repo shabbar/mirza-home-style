@@ -7,10 +7,12 @@ import telenor1 from "@/assets/projects/telenor-new-1.jpg";
 import telenor2 from "@/assets/projects/telenor-new-2.jpg";
 import telenor3 from "@/assets/projects/telenor-new-3.jpg";
 import telenor4 from "@/assets/projects/telenor-new-4.jpg";
+import telenor5 from "@/assets/projects/telenor-new-5.jpg";
 
 // 10 Pearls
 import pearls1 from "@/assets/projects/10pearls-new-1.jpg";
 import pearls2 from "@/assets/projects/10pearls-new-2.jpg";
+import pearls3 from "@/assets/projects/10pearls-new-3.jpg";
 
 // Marriott
 import marriott1 from "@/assets/projects/marriott-new-1.jpg";
@@ -19,10 +21,10 @@ import marriott3 from "@/assets/projects/marriott-new-3.jpg";
 import marriott4 from "@/assets/projects/marriott-new-4.jpg";
 import marriott5 from "@/assets/projects/marriott-new-5.jpg";
 import marriott6 from "@/assets/projects/marriott-new-6.jpg";
+import marriott7 from "@/assets/projects/marriott-new-7.jpg";
+import marriott8 from "@/assets/projects/marriott-new-8.jpg";
 
 // PC Legacy
-import pcLegacy1 from "@/assets/projects/pc-legacy-new-1.jpg";
-import pcLegacy2 from "@/assets/projects/pc-legacy-new-2.jpg";
 import pcLegacy3 from "@/assets/projects/pc-legacy-new-3.jpg";
 import pcLegacy4 from "@/assets/projects/pc-legacy-new-4.jpg";
 import pcLegacy5 from "@/assets/projects/pc-legacy-new-5.jpg";
@@ -49,13 +51,13 @@ import mindstir11 from "@/assets/projects/mindstir-new-11.jpg";
 import mindstir12 from "@/assets/projects/mindstir-new-12.jpg";
 
 // Jazz
-import jazz1 from "@/assets/projects/jazz-1.jpg";
-import jazz2 from "@/assets/projects/jazz-2.jpg";
-import jazz3 from "@/assets/projects/jazz-3.jpg";
-import jazz4 from "@/assets/projects/jazz-4.jpg";
+import jazzNew1 from "@/assets/projects/jazz-new-1.jpg";
+import jazzNew2 from "@/assets/projects/jazz-new-2.jpg";
+import jazzNew3 from "@/assets/projects/jazz-new-3.jpg";
+import jazzNew4 from "@/assets/projects/jazz-new-4.jpg";
 
 // Zong
-import zong3 from "@/assets/projects/zong-3.jpg";
+import zongNew1 from "@/assets/projects/zong-new-1.jpg";
 
 const Projects = () => {
   const projects = [
@@ -64,28 +66,28 @@ const Projects = () => {
       location: "AJ Tower, Gulberg Greens, Islamabad",
       category: "Corporate Office",
       description: "Development of TSS new office at AJ Tower, Gulberg Greens Islamabad - A modern corporate workspace featuring state-of-the-art facilities and contemporary design elements.",
-      images: [telenor1, telenor2, telenor3, telenor4],
+      images: [telenor1, telenor2, telenor3, telenor4, telenor5],
     },
     {
       title: "Development of 10 Pearls Office, NASTP Karachi",
       location: "NASTP, Karachi",
       category: "Corporate Office",
       description: "Complete development and interior design of 10 Pearls office space, creating an innovative and collaborative work environment.",
-      images: [pearls1, pearls2],
+      images: [pearls1, pearls2, pearls3],
     },
     {
       title: "Islamabad Marriott Hotel",
       location: "Islamabad",
       category: "Hospitality",
       description: "Luxury hotel interior design and renovation project, delivering world-class hospitality spaces with elegant finishes and sophisticated ambiance.",
-      images: [marriott1, marriott2, marriott3, marriott4, marriott5, marriott6],
+      images: [marriott1, marriott2, marriott3, marriott4, marriott5, marriott6, marriott7, marriott8],
     },
     {
       title: "PC Legacy Hotel, Nasirabad Hunza",
       location: "Nasirabad, Hunza",
       category: "Hospitality",
       description: "Complete turnkey project for PC Legacy Hotel, inaugurated by Mr. Murtaza Hashwani, Deputy Chairman & CEO, Hashoo Group. A premium hospitality destination in the stunning Hunza valley.",
-      images: [pcLegacy1, pcLegacy2, pcLegacy3, pcLegacy4, pcLegacy5, pcLegacy6],
+      images: [pcLegacy3, pcLegacy4, pcLegacy5, pcLegacy6],
     },
     {
       title: "Renovation of Auditorium and Arbor Lobby",
@@ -102,14 +104,14 @@ const Projects = () => {
       location: "Pakistan",
       category: "Telecommunications",
       description: "Corporate office design and development for Jazz, Pakistan's leading digital operator.",
-      images: [jazz1, jazz2, jazz3, jazz4],
+      images: [jazzNew1, jazzNew2, jazzNew3, jazzNew4],
     },
     {
       title: "Zong",
       location: "Pakistan",
       category: "Telecommunications",
       description: "Office development and interior design for Zong, delivering modern workspace solutions.",
-      images: [zong3],
+      images: [zongNew1],
     },
   ];
 
