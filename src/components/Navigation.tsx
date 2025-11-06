@@ -35,14 +35,22 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/98 backdrop-blur-lg border-b border-luxury-gold/20 shadow-md">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-center md:justify-between h-16 md:h-20">
-          {/* Logo - Centered on mobile */}
+          {/* Logo with Company Name - Centered on mobile */}
           <div className="flex-shrink-0 text-center md:text-left">
             <a href="#home" className="flex items-center gap-3 hover:scale-105 transition-transform duration-300">
               <img 
                 src={logo} 
-                alt="SAM Enterprises" 
-                className="h-10 md:h-12 w-auto object-contain"
+                alt="SAM Enterprises Logo" 
+                className="h-12 md:h-14 w-auto object-contain drop-shadow-lg"
               />
+              <div className="flex flex-col">
+                <span className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-luxury-navy via-luxury-gold to-luxury-navy-light bg-clip-text text-transparent tracking-wide">
+                  SAM
+                </span>
+                <span className="text-xs md:text-sm font-semibold text-luxury-gold tracking-[0.2em] uppercase">
+                  Enterprises
+                </span>
+              </div>
             </a>
           </div>
 

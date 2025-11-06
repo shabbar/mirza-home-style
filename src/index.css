@@ -8,83 +8,87 @@ All colors MUST be HSL for luxury interior design aesthetic.
 
 @layer base {
   :root {
-    /* Base Colors - Elegant cream background with rich navy text */
-    --background: 35 30% 97%;
-    --foreground: 220 50% 20%;
+    /* Vibrant Modern Color Palette - Rich & Contemporary */
+    /* Base Colors - Deep charcoal with crisp white accents */
+    --background: 210 15% 98%;
+    --foreground: 210 30% 15%;
 
-    /* Card Colors - Pure white with navy text */
+    /* Card Colors - Ultra clean white with deep contrast */
     --card: 0 0% 100%;
-    --card-foreground: 220 50% 20%;
+    --card-foreground: 210 30% 15%;
 
     /* Popover Colors */
     --popover: 0 0% 100%;
-    --popover-foreground: 220 50% 20%;
+    --popover-foreground: 210 30% 15%;
 
-    /* Primary - Deep navy for sophistication */
-    --primary: 220 50% 20%;
+    /* Primary - Bold deep teal for modern sophistication */
+    --primary: 195 85% 25%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary - Warm gold for luxury accents */
-    --secondary: 38 92% 58%;
-    --secondary-foreground: 220 50% 20%;
+    /* Secondary - Vibrant coral/terracotta for energy */
+    --secondary: 14 88% 58%;
+    --secondary-foreground: 0 0% 100%;
 
-    /* Muted - Soft cream tones */
-    --muted: 40 40% 94%;
-    --muted-foreground: 220 30% 45%;
+    /* Muted - Soft neutral gray */
+    --muted: 210 15% 95%;
+    --muted-foreground: 210 20% 45%;
 
-    /* Accent - Rich gold highlights */
-    --accent: 38 92% 58%;
-    --accent-foreground: 220 50% 20%;
+    /* Accent - Electric blue for highlights */
+    --accent: 200 95% 48%;
+    --accent-foreground: 0 0% 100%;
 
     /* Destructive */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
     /* Borders & Inputs */
-    --border: 220 20% 88%;
-    --input: 220 20% 94%;
-    --ring: 38 92% 58%;
+    --border: 210 15% 88%;
+    --input: 210 15% 92%;
+    --ring: 200 95% 48%;
 
-    /* Custom Luxury Palette */
-    --luxury-navy: 220 50% 20%;
-    --luxury-navy-light: 220 40% 35%;
-    --luxury-gold: 38 92% 58%;
-    --luxury-gold-dark: 38 80% 45%;
-    --luxury-gold-light: 42 95% 88%;
-    --luxury-cream: 35 30% 97%;
-    --luxury-cream-dark: 35 25% 92%;
-    --luxury-gray: 220 15% 75%;
+    /* Premium Custom Color Palette - Bold & Vibrant */
+    --luxury-navy: 210 80% 20%;
+    --luxury-navy-light: 210 65% 35%;
+    --luxury-gold: 42 95% 55%;
+    --luxury-gold-dark: 38 85% 45%;
+    --luxury-gold-light: 45 100% 88%;
+    --luxury-cream: 35 35% 97%;
+    --luxury-cream-dark: 35 30% 92%;
+    --luxury-gray: 210 12% 70%;
     --luxury-white: 0 0% 100%;
+    --luxury-teal: 195 85% 25%;
+    --luxury-teal-light: 195 75% 40%;
+    --luxury-coral: 14 88% 58%;
+    --luxury-blue: 200 95% 48%;
+    --luxury-purple: 260 75% 50%;
     
-    /* Premium Gradients */
-    --gradient-luxury: linear-gradient(135deg, hsl(220 50% 20%) 0%, hsl(220 45% 28%) 50%, hsl(220 40% 35%) 100%);
-    --gradient-gold: linear-gradient(135deg, hsl(38 92% 58%) 0%, hsl(40 88% 62%) 50%, hsl(42 85% 68%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(220 50% 20% / 0.97) 0%, hsl(220 45% 28% / 0.95) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(40 40% 98%) 100%);
-    --gradient-overlay: linear-gradient(180deg, transparent 0%, hsl(220 50% 20% / 0.8) 100%);
+    /* Dynamic Gradients - Bold & Eye-catching */
+    --gradient-luxury: linear-gradient(135deg, hsl(195 85% 25%) 0%, hsl(200 95% 48%) 50%, hsl(210 80% 35%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(42 95% 55%) 0%, hsl(38 85% 45%) 50%, hsl(35 80% 50%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(195 85% 25% / 0.95) 0%, hsl(210 80% 20% / 0.97) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(210 15% 98%) 100%);
+    --gradient-overlay: linear-gradient(180deg, transparent 0%, hsl(210 80% 20% / 0.85) 100%);
+    --gradient-coral: linear-gradient(135deg, hsl(14 88% 58%) 0%, hsl(10 85% 55%) 100%);
+    --gradient-blue: linear-gradient(135deg, hsl(200 95% 48%) 0%, hsl(195 85% 40%) 100%);
+    --gradient-vibrant: linear-gradient(135deg, hsl(195 85% 25%) 0%, hsl(260 75% 50%) 50%, hsl(14 88% 58%) 100%);
     
-    /* Sophisticated Shadows */
-    --shadow-luxury: 0 12px 48px -12px hsl(220 50% 20% / 0.25);
-    --shadow-card: 0 4px 24px -4px hsl(220 20% 50% / 0.12);
-    --shadow-gold: 0 6px 28px -6px hsl(38 92% 58% / 0.35);
-    --shadow-hover: 0 16px 56px -16px hsl(220 50% 20% / 0.3);
+    /* Modern Shadows - Vibrant & Dimensional */
+    --shadow-luxury: 0 12px 48px -12px hsl(195 85% 25% / 0.3);
+    --shadow-card: 0 4px 24px -4px hsl(210 20% 50% / 0.15);
+    --shadow-gold: 0 6px 28px -6px hsl(42 95% 55% / 0.4);
+    --shadow-hover: 0 16px 56px -16px hsl(195 85% 25% / 0.35);
+    --shadow-coral: 0 8px 32px -8px hsl(14 88% 58% / 0.35);
+    --shadow-blue: 0 8px 32px -8px hsl(200 95% 48% / 0.3);
 
     --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 

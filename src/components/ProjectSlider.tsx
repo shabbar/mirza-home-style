@@ -16,7 +16,6 @@ import luxurySuite from "@/assets/slider/luxury-suite.jpg";
 const ProjectSlider = () => {
   const projectImages = [
     { src: diningArea, title: "Luxury Dining Experience", subtitle: "Premium Restaurant Design with Elegant Marble Flooring" },
-    { src: hotelRoom, title: "Comfort & Elegance", subtitle: "Modern Hotel Room Design" },
     { src: restaurantAerial, title: "Culinary Excellence", subtitle: "Contemporary Dining Space" },
     { src: hotelExterior, title: "Mountain Retreat", subtitle: "Stunning Hotel Architecture" },
     { src: luxurySuite, title: "Luxury Suite", subtitle: "Sophisticated Interior Design" },

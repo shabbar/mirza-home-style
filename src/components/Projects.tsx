@@ -13,6 +13,7 @@ import telenor5 from "@/assets/projects/telenor-new-5.jpg";
 import pearls1 from "@/assets/projects/10pearls-new-1.jpg";
 import pearls2 from "@/assets/projects/10pearls-new-2.jpg";
 import pearls3 from "@/assets/projects/10pearls-new-3.jpg";
+import pearls4 from "@/assets/projects/10pearls-new-4.jpg";
 
 // Marriott
 import marriott1 from "@/assets/projects/marriott-new-1.jpg";
@@ -65,7 +66,7 @@ const Projects = () => {
       location: "NASTP, Karachi",
       category: "Corporate Office",
       description: "Complete development and interior design of 10 Pearls office space, creating an innovative and collaborative work environment.",
-      images: [pearls1, pearls2, pearls3],
+      images: [pearls1, pearls2, pearls3, pearls4],
     },
     {
       title: "Islamabad Marriott Hotel",
@@ -149,25 +150,21 @@ const Projects = () => {
                 <p className="text-muted-foreground max-w-3xl">{project.description}</p>
               </div>
 
-              {/* Project Images Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {/* Project Images Grid - No spacing between images */}
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0">
                 {project.images.map((image, imgIndex) => (
-                  <Card
+                  <div
                     key={imgIndex}
-                    className="overflow-hidden group hover:shadow-xl transition-all duration-300"
+                    className="relative aspect-square overflow-hidden group"
                   >
-                    <CardContent className="p-0">
-                      <div className="relative aspect-[4/3] overflow-hidden">
-                        <img
-                          src={image}
-                          alt={`${project.title} - Image ${imgIndex + 1}`}
-                          className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                          loading="lazy"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                      </div>
-                    </CardContent>
-                  </Card>
+                    <img
+                      src={image}
+                      alt={`${project.title} - Image ${imgIndex + 1}`}
+                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  </div>
                 ))}
               </div>
             </div>
@@ -202,24 +199,20 @@ const Projects = () => {
                   <p className="text-muted-foreground max-w-3xl">{project.description}</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0">
                   {project.images.map((image, imgIndex) => (
-                    <Card
+                    <div
                       key={imgIndex}
-                      className="overflow-hidden group hover:shadow-xl transition-all duration-300"
+                      className="relative aspect-square overflow-hidden group"
                     >
-                      <CardContent className="p-0">
-                        <div className="relative aspect-[4/3] overflow-hidden">
-                          <img
-                            src={image}
-                            alt={`${project.title} - Image ${imgIndex + 1}`}
-                            className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                            loading="lazy"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                        </div>
-                      </CardContent>
-                    </Card>
+                      <img
+                        src={image}
+                        alt={`${project.title} - Image ${imgIndex + 1}`}
+                        className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    </div>
                   ))}
                 </div>
               </div>
@@ -255,24 +248,20 @@ const Projects = () => {
                   <p className="text-muted-foreground max-w-3xl">{project.description}</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0">
                   {project.images.map((image, imgIndex) => (
-                    <Card
+                    <div
                       key={imgIndex}
-                      className="overflow-hidden group hover:shadow-xl transition-all duration-300"
+                      className="relative aspect-square overflow-hidden group"
                     >
-                      <CardContent className="p-0">
-                        <div className="relative aspect-[4/3] overflow-hidden">
-                          <img
-                            src={image}
-                            alt={`${project.title} - Image ${imgIndex + 1}`}
-                            className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                            loading="lazy"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                        </div>
-                      </CardContent>
-                    </Card>
+                      <img
+                        src={image}
+                        alt={`${project.title} - Image ${imgIndex + 1}`}
+                        className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    </div>
                   ))}
                 </div>
               </div>
