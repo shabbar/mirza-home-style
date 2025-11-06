@@ -82,7 +82,7 @@ const Projects = () => {
       images: [pcLegacy3, pcLegacy4, pcLegacy5, pcLegacy6],
     },
     {
-      title: "Renovation of Auditorium and Arbor Lobby",
+      title: "PAF Base Sargodha",
       location: "PAF Base Sargodha",
       category: "Institutional",
       description: "Renovation of Auditorium and Arbor Lobby at PAF Base Sargodha, combining functional design with institutional excellence.",
