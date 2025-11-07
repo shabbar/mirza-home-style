@@ -7,8 +7,6 @@ import Autoplay from "embla-carousel-autoplay";
 
 // Import slider images
 import diningArea from "@/assets/slider/dining-area.jpg";
-import hotelRoom from "@/assets/slider/hotel-room.jpg";
-import restaurantAerial from "@/assets/slider/restaurant-aerial.jpg";
 import hotelExterior from "@/assets/slider/hotel-exterior.jpg";
 import pafOffice from "@/assets/slider/paf-office.jpg";
 import luxurySuite from "@/assets/slider/luxury-suite.jpg";
@@ -16,7 +14,6 @@ import luxurySuite from "@/assets/slider/luxury-suite.jpg";
 const ProjectSlider = () => {
   const projectImages = [
     { src: diningArea, title: "Luxury Dining Experience", subtitle: "Premium Restaurant Design with Elegant Marble Flooring" },
-    { src: restaurantAerial, title: "Culinary Excellence", subtitle: "Contemporary Dining Space" },
     { src: hotelExterior, title: "Mountain Retreat", subtitle: "Stunning Hotel Architecture" },
     { src: luxurySuite, title: "Luxury Suite", subtitle: "Sophisticated Interior Design" },
     { src: pafOffice, title: "PAF Base Sargodha", subtitle: "Professional Office Design & Construction" },

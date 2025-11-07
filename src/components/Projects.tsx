@@ -13,7 +13,6 @@ import telenor5 from "@/assets/projects/telenor-new-5.jpg";
 import pearls1 from "@/assets/projects/10pearls-new-1.jpg";
 import pearls2 from "@/assets/projects/10pearls-new-2.jpg";
 import pearls3 from "@/assets/projects/10pearls-new-3.jpg";
-import pearls4 from "@/assets/projects/10pearls-new-4.jpg";
 
 // Marriott
 import marriott1 from "@/assets/projects/marriott-new-1.jpg";
@@ -58,7 +57,7 @@ const Projects = () => {
       title: "Telenor Shared Services",
       location: "AJ Tower, Gulberg Greens, Islamabad",
       category: "Corporate Office",
-      description: "Development of TSS new office at AJ Tower, Gulberg Greens Islamabad - A modern corporate workspace featuring state-of-the-art facilities and contemporary design elements.",
+      description: "Development of TSS new office at AJ Tower, Gulberg Greens Islamabad",
       images: [telenor1, telenor2, telenor3, telenor4, telenor5],
     },
     {
@@ -66,7 +65,7 @@ const Projects = () => {
       location: "NASTP, Karachi",
       category: "Corporate Office",
       description: "Complete development and interior design of 10 Pearls office space, creating an innovative and collaborative work environment.",
-      images: [pearls1, pearls2, pearls3, pearls4],
+      images: [pearls1, pearls2, pearls3],
     },
     {
       title: "Islamabad Marriott Hotel",
