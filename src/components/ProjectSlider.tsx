@@ -6,21 +6,27 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 
 // Import slider images
-import diningArea from "@/assets/slider/dining-area.jpg";
-import hotelExterior from "@/assets/slider/hotel-exterior.jpg";
-import pafOffice from "@/assets/slider/paf-office.jpg";
-import luxurySuite from "@/assets/slider/luxury-suite.jpg";
+import teamAward from "@/assets/slider/team-award.jpg";
+import luxuryRoom from "@/assets/slider/luxury-room.jpg";
+import restaurantOverview from "@/assets/slider/restaurant-overview.jpg";
+import marbleDining from "@/assets/slider/marble-dining.jpg";
+import mountainTerrace from "@/assets/slider/mountain-terrace.jpg";
+import modernRestaurant from "@/assets/slider/modern-restaurant.jpg";
+import terraceNight from "@/assets/slider/terrace-night.jpg";
 
 const ProjectSlider = () => {
   const projectImages = [
-    { src: diningArea, title: "Luxury Dining Experience", subtitle: "Premium Restaurant Design with Elegant Marble Flooring" },
-    { src: hotelExterior, title: "Mountain Retreat", subtitle: "Stunning Hotel Architecture" },
-    { src: luxurySuite, title: "Luxury Suite", subtitle: "Sophisticated Interior Design" },
-    { src: pafOffice, title: "PAF Base Sargodha", subtitle: "Professional Office Design & Construction" },
+    { src: teamAward, title: "Award Excellence", subtitle: "Recognized for Outstanding Design & Construction Services" },
+    { src: luxuryRoom, title: "Premium Hotel Suite", subtitle: "Luxury Accommodation with Mountain Views" },
+    { src: restaurantOverview, title: "Culinary Excellence", subtitle: "Contemporary Dining Space Design" },
+    { src: marbleDining, title: "Grand Dining Hall", subtitle: "Exquisite Marble Flooring & Premium Interiors" },
+    { src: mountainTerrace, title: "Mountain Retreat Terrace", subtitle: "Scenic Outdoor Living Spaces" },
+    { src: modernRestaurant, title: "Modern Restaurant Design", subtitle: "Sophisticated Dining Experience" },
+    { src: terraceNight, title: "Evening Ambiance", subtitle: "Multi-Level Outdoor Terraces" },
   ];
 
   return (
-    <section className="relative w-full h-[60vh] md:h-[70vh] lg:h-[85vh] overflow-hidden bg-black mt-16 md:mt-20">
+    <section className="relative w-full h-[70vh] md:h-[80vh] lg:h-screen overflow-hidden bg-gradient-to-br from-black via-luxury-navy/20 to-black mt-16 md:mt-20">
       <Carousel
         opts={{
           align: "center",
@@ -30,7 +36,7 @@ const ProjectSlider = () => {
         }}
         plugins={[
           Autoplay({
-            delay: 3500,
+            delay: 4000,
             stopOnInteraction: false,
             stopOnMouseEnter: false,
           }),
@@ -44,17 +50,20 @@ const ProjectSlider = () => {
                 <img
                   src={image.src}
                   alt={image.title}
-                  className="w-full h-full object-contain object-center transition-transform duration-[8000ms] ease-linear hover:scale-105 bg-black"
+                  className="w-full h-full object-cover object-center transition-all duration-[10000ms] ease-out hover:scale-110"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 lg:p-16 animate-fade-in">
-                  <h3 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-2xl mb-3 md:mb-4 tracking-tight">
-                    {image.title}
-                  </h3>
-                  <p className="text-lg md:text-2xl lg:text-3xl text-white/95 drop-shadow-xl font-light">
-                    {image.subtitle}
-                  </p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-accent/20 animate-fade-in" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12 lg:p-20 animate-fade-in">
+                  <div className="max-w-7xl mx-auto">
+                    <h3 className="text-3xl md:text-6xl lg:text-7xl font-bold text-white drop-shadow-2xl mb-3 md:mb-5 tracking-tight bg-gradient-to-r from-white via-primary-foreground to-accent-foreground bg-clip-text">
+                      {image.title}
+                    </h3>
+                    <p className="text-lg md:text-3xl lg:text-4xl text-white/95 drop-shadow-2xl font-light max-w-4xl">
+                      {image.subtitle}
+                    </p>
+                  </div>
                 </div>
               </div>
             </CarouselItem>
