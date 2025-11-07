@@ -2,7 +2,12 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -13,6 +18,11 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'playfair': ['Playfair Display', 'Georgia', 'serif'],
+        'cormorant': ['Cormorant Garamond', 'Georgia', 'serif'],
+        'montserrat': ['Montserrat', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,41 +57,26 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
-        },
-        // Luxury design system colors
-        luxury: {
-          navy: "hsl(var(--luxury-navy))",
-          "navy-light": "hsl(var(--luxury-navy-light))",
-          gold: "hsl(var(--luxury-gold))",
-          "gold-dark": "hsl(var(--luxury-gold-dark))",
-          "gold-light": "hsl(var(--luxury-gold-light))",
-          cream: "hsl(var(--luxury-cream))",
-          "cream-dark": "hsl(var(--luxury-cream-dark))",
-          gray: "hsl(var(--luxury-gray))",
-          white: "hsl(var(--luxury-white))",
-        },
+        "luxury-cream": "hsl(var(--luxury-cream))",
+        "luxury-taupe": "hsl(var(--luxury-taupe))",
+        "luxury-walnut": "hsl(var(--luxury-walnut))",
+        "luxury-gold": "hsl(var(--luxury-gold))",
+        "luxury-bronze": "hsl(var(--luxury-bronze))",
+        "luxury-charcoal": "hsl(var(--luxury-charcoal))",
+        "luxury-ivory": "hsl(var(--luxury-ivory))",
+        "luxury-sage": "hsl(var(--luxury-sage))",
       },
       backgroundImage: {
-        "gradient-luxury": "var(--gradient-luxury)",
+        "gradient-primary": "var(--gradient-primary)",
+        "gradient-secondary": "var(--gradient-secondary)",
         "gradient-gold": "var(--gradient-gold)",
-        "gradient-hero": "var(--gradient-hero)",
-        "gradient-card": "var(--gradient-card)",
-        "gradient-overlay": "var(--gradient-overlay)",
+        "gradient-warm": "var(--gradient-warm)",
       },
       boxShadow: {
-        "luxury": "var(--shadow-luxury)",
-        "card": "var(--shadow-card)",
-        "gold": "var(--shadow-gold)",
-        "hover": "var(--shadow-hover)",
+        "soft": "var(--shadow-soft)",
+        "medium": "var(--shadow-medium)",
+        "strong": "var(--shadow-strong)",
+        "gold-glow": "var(--shadow-gold-glow)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -119,42 +114,64 @@ export default {
             transform: "translateY(0)",
           },
         },
-        "slide-up": {
+        "fade-out": {
           "0%": {
-            opacity: "0",
-            transform: "translateY(20px)",
-          },
-          "100%": {
             opacity: "1",
             transform: "translateY(0)",
+          },
+          "100%": {
+            opacity: "0",
+            transform: "translateY(10px)",
           },
         },
         "scale-in": {
           "0%": {
-            opacity: "0",
             transform: "scale(0.95)",
+            opacity: "0",
           },
           "100%": {
-            opacity: "1",
             transform: "scale(1)",
+            opacity: "1",
           },
         },
-        shimmer: {
+        "scale-out": {
+          from: {
+            transform: "scale(1)",
+            opacity: "1",
+          },
+          to: {
+            transform: "scale(0.95)",
+            opacity: "0",
+          },
+        },
+        "slide-in-right": {
           "0%": {
-            backgroundPosition: "-200% 0",
+            transform: "translateX(100%)",
           },
           "100%": {
-            backgroundPosition: "200% 0",
+            transform: "translateX(0)",
+          },
+        },
+        "slide-out-right": {
+          "0%": {
+            transform: "translateX(0)",
+          },
+          "100%": {
+            transform: "translateX(100%)",
           },
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.3s ease-out",
-        "accordion-up": "accordion-up 0.3s ease-out",
-        "fade-in": "fade-in 0.5s ease-out",
-        "slide-up": "slide-up 0.6s ease-out",
-        "scale-in": "scale-in 0.4s ease-out",
-        shimmer: "shimmer 3s ease-in-out infinite",
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fade-in 0.3s ease-out",
+        "fade-out": "fade-out 0.3s ease-out",
+        "scale-in": "scale-in 0.2s ease-out",
+        "scale-out": "scale-out 0.2s ease-out",
+        "slide-in-right": "slide-in-right 0.3s ease-out",
+        "slide-out-right": "slide-out-right 0.3s ease-out",
+        enter: "fade-in 0.3s ease-out, scale-in 0.2s ease-out",
+        exit: "fade-out 0.3s ease-out, scale-out 0.2s ease-out",
       },
     },
   },
