@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="max-w-6xl mx-auto">
           {/* Heading */}
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-center mb-6 text-luxury-navy leading-tight">
-            <span className="bg-gradient-to-r from-luxury-gold to-luxury-navy bg-clip-text text-transparent">SAM Enterprises</span>
+            <span className="bg-gradient-to-r from-luxury-gold to-luxury-navy bg-clip-text text-transparent">SA Mirza</span>
             <br />
             <span className="text-2xl md:text-3xl lg:text-4xl font-medium text-muted-foreground mt-2 block">
               Excellence in Architecture, Interior Design & Construction

@@ -35,7 +35,7 @@ const Footer = () => {
           <div className="space-y-6">
             <div>
               <h3 className="text-2xl font-bold text-luxury-gold mb-4">
-                SAM Enterprises
+                SA Mirza
               </h3>
               <p className="text-gray-300 leading-relaxed">
                 Excellence in Architecture, Interior Design, and Construction. Specializing in spaces that blend aesthetic beauty with exceptional functionality.

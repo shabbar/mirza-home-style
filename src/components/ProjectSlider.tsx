@@ -16,6 +16,9 @@ import terraceNight from "@/assets/slider/terrace-night.jpg";
 import hotelRoom from "@/assets/slider/hotel-room.jpg";
 import luxurySuite from "@/assets/slider/luxury-suite.jpg";
 import diningArea from "@/assets/slider/dining-area.jpg";
+import hotelExterior from "@/assets/slider/hotel-exterior.jpg";
+import pafOffice from "@/assets/slider/paf-office.jpg";
+import restaurantAerial from "@/assets/slider/restaurant-aerial.jpg";
 
 const ProjectSlider = () => {
   const projectImages = [
@@ -29,6 +32,9 @@ const ProjectSlider = () => {
     { src: hotelRoom, title: "Executive Hotel Room", subtitle: "Contemporary Luxury Hospitality Design" },
     { src: luxurySuite, title: "Premium Suite Interior", subtitle: "Elegant Bedroom with Custom Furnishings" },
     { src: diningArea, title: "Modern Work Space", subtitle: "Functional & Stylish Hospitality Furniture" },
+    { src: hotelExterior, title: "Luxury Hotel Exterior", subtitle: "Grand Architecture & Landscape Design" },
+    { src: pafOffice, title: "Corporate Office Design", subtitle: "Professional Workspace Solutions" },
+    { src: restaurantAerial, title: "Restaurant Overview", subtitle: "Complete Dining Experience Design" },
   ];
 
   return (

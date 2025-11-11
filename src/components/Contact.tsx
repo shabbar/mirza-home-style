@@ -149,7 +149,7 @@ const Contact = () => {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="SAM Enterprises Office Location"
+                title="SA Mirza Enterprises Office Location"
               />
             </Card>
 

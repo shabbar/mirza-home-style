@@ -41,7 +41,7 @@ const Navigation = () => {
               <div className="relative">
                 <img 
                   src={logo} 
-                  alt="SAM Enterprises Logo" 
+                  alt="SA Mirza Enterprises Logo" 
                   className="h-14 md:h-16 w-auto object-contain drop-shadow-lg transition-all duration-500 group-hover:drop-shadow-2xl"
                 />
                 <div className="absolute inset-0 bg-luxury-gold/0 group-hover:bg-luxury-gold/10 rounded-full blur-xl transition-all duration-500"></div>
