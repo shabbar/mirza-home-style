@@ -4,10 +4,9 @@ import { MapPin } from "lucide-react";
 
 // Telenor
 import telenor1 from "@/assets/projects/telenor-new-1.jpg";
-import telenor2 from "@/assets/projects/telenor-new-2.jpg";
 import telenor3 from "@/assets/projects/telenor-new-3.jpg";
-import telenor4 from "@/assets/projects/telenor-new-4.jpg";
 import telenor5 from "@/assets/projects/telenor-new-5.jpg";
+import telenorT1 from "@/assets/projects/telenor-t1.jpg";
 
 // 10 Pearls
 import pearls1 from "@/assets/projects/10pearls-new-1.jpg";
@@ -25,6 +24,8 @@ import marriott7 from "@/assets/projects/marriott-new-7.jpg";
 import marriott8 from "@/assets/projects/marriott-new-8.jpg";
 
 // PC Legacy
+import pcLegacy1 from "@/assets/projects/pc-legacy-new-1.jpg";
+import pcLegacy2 from "@/assets/projects/pc-legacy-new-2.jpg";
 import pcLegacy3 from "@/assets/projects/pc-legacy-new-3.jpg";
 import pcLegacy4 from "@/assets/projects/pc-legacy-new-4.jpg";
 import pcLegacy5 from "@/assets/projects/pc-legacy-new-5.jpg";
@@ -48,17 +49,14 @@ import jazzNew2 from "@/assets/projects/jazz-new-2.jpg";
 import jazzNew3 from "@/assets/projects/jazz-new-3.jpg";
 import jazzNew4 from "@/assets/projects/jazz-new-4.jpg";
 
-// Zong
-import zongNew1 from "@/assets/projects/zong-new-1.jpg";
-
 const Projects = () => {
   const projects = [
     {
-      title: "Telenor Shared Services",
+      title: "Telenor Shared Services - Development of TSS new office at AJ Tower, Gulberg Greens Islamabad",
       location: "AJ Tower, Gulberg Greens, Islamabad",
       category: "Corporate Office",
-      description: "Development of TSS new office at AJ Tower, Gulberg Greens Islamabad",
-      images: [telenor1, telenor2, telenor3, telenor4, telenor5],
+      description: "",
+      images: [telenor1, telenor3, telenor5, telenorT1],
     },
     {
       title: "Development of 10 Pearls Office, NASTP Karachi",
@@ -86,7 +84,7 @@ const Projects = () => {
       location: "PAF Base Sargodha",
       category: "Institutional",
       description: "Renovation of Auditorium and Arbor Lobby at PAF Base Sargodha, combining functional design with institutional excellence.",
-      images: [paf1, paf2, paf3, paf4],
+      images: [pcLegacy1, pcLegacy2, paf3, paf4],
     },
   ];
 
@@ -97,13 +95,6 @@ const Projects = () => {
       category: "Telecommunications",
       description: "Corporate office design and development for Jazz, Pakistan's leading digital operator.",
       images: [jazzNew1, jazzNew2, jazzNew3, jazzNew4],
-    },
-    {
-      title: "Zong",
-      location: "Pakistan",
-      category: "Telecommunications",
-      description: "Office development and interior design for Zong, delivering modern workspace solutions.",
-      images: [zongNew1],
     },
   ];
 
