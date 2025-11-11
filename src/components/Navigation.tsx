@@ -48,7 +48,7 @@ const Navigation = () => {
               </div>
               <div className="flex flex-col">
                 <span className="text-2xl md:text-3xl font-playfair font-bold bg-gradient-gold bg-clip-text text-transparent tracking-wide leading-tight">
-                  SAM
+                  SA Mirza
                 </span>
                 <span className="text-xs md:text-sm font-montserrat font-semibold text-luxury-bronze tracking-[0.25em] uppercase">
                   Enterprises

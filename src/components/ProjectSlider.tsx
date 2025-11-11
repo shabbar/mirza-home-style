@@ -13,6 +13,9 @@ import marbleDining from "@/assets/slider/marble-dining.jpg";
 import mountainTerrace from "@/assets/slider/mountain-terrace.jpg";
 import modernRestaurant from "@/assets/slider/modern-restaurant.jpg";
 import terraceNight from "@/assets/slider/terrace-night.jpg";
+import hotelRoom from "@/assets/slider/hotel-room.jpg";
+import luxurySuite from "@/assets/slider/luxury-suite.jpg";
+import diningArea from "@/assets/slider/dining-area.jpg";
 
 const ProjectSlider = () => {
   const projectImages = [
@@ -23,6 +26,9 @@ const ProjectSlider = () => {
     { src: mountainTerrace, title: "Mountain Retreat Terrace", subtitle: "Scenic Outdoor Living Spaces" },
     { src: modernRestaurant, title: "Modern Restaurant Design", subtitle: "Sophisticated Dining Experience" },
     { src: terraceNight, title: "Evening Ambiance", subtitle: "Multi-Level Outdoor Terraces" },
+    { src: hotelRoom, title: "Executive Hotel Room", subtitle: "Contemporary Luxury Hospitality Design" },
+    { src: luxurySuite, title: "Premium Suite Interior", subtitle: "Elegant Bedroom with Custom Furnishings" },
+    { src: diningArea, title: "Modern Work Space", subtitle: "Functional & Stylish Hospitality Furniture" },
   ];
 
   return (
@@ -52,6 +58,7 @@ const ProjectSlider = () => {
                   alt={image.title}
                   className="w-full h-full object-cover object-center transition-all duration-[10000ms] ease-out hover:scale-110"
                   loading="lazy"
+                  style={{ aspectRatio: '16/9' }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent" />
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-accent/20 animate-fade-in" />
