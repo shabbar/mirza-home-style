@@ -77,14 +77,7 @@ const Projects = () => {
       location: "Nasirabad, Hunza",
       category: "Hospitality",
       description: "Complete turnkey project for PC Legacy Hotel, inaugurated by Mr. Murtaza Hashwani, Deputy Chairman & CEO, Hashoo Group. A premium hospitality destination in the stunning Hunza valley.",
-      images: [pcLegacy1, pcLegacy2, pcLegacy3, pcLegacy4, pcLegacy5, pcLegacy6],
-    },
-    {
-      title: "PAF Base Sargodha",
-      location: "PAF Base Sargodha",
-      category: "Institutional",
-      description: "Renovation of Auditorium and Arbor Lobby at PAF Base Sargodha, combining functional design with institutional excellence.",
-      images: [paf3, paf4],
+      images: [pcLegacy3, pcLegacy4, pcLegacy5, pcLegacy6],
     },
   ];
 
