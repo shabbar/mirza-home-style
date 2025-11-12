@@ -68,12 +68,12 @@ const ProjectSlider = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent" />
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-accent/20 animate-fade-in" />
-                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12 lg:p-20 animate-fade-in">
+                <div className="absolute bottom-0 left-0 right-0 p-4 md:p-8 lg:p-12 animate-fade-in">
                   <div className="max-w-7xl mx-auto">
-                    <h3 className="text-3xl md:text-6xl lg:text-7xl font-bold text-white drop-shadow-2xl mb-3 md:mb-5 tracking-tight bg-gradient-to-r from-white via-primary-foreground to-accent-foreground bg-clip-text">
+                    <h3 className="text-xl md:text-3xl lg:text-4xl font-bold text-white drop-shadow-2xl mb-1 md:mb-2 tracking-tight">
                       {image.title}
                     </h3>
-                    <p className="text-lg md:text-3xl lg:text-4xl text-white/95 drop-shadow-2xl font-light max-w-4xl">
+                    <p className="text-sm md:text-base lg:text-lg text-white/90 drop-shadow-lg font-light max-w-3xl">
                       {image.subtitle}
                     </p>
                   </div>

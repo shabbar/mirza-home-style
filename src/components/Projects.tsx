@@ -133,8 +133,8 @@ const Projects = () => {
                 <p className="text-muted-foreground max-w-3xl">{project.description}</p>
               </div>
 
-              {/* Project Images Grid - No spacing between images */}
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0">
+              {/* Project Images Grid - Responsive with minimal gaps */}
+              <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-1">
                 {project.images.map((image, imgIndex) => (
                   <div
                     key={imgIndex}
@@ -182,7 +182,7 @@ const Projects = () => {
                   <p className="text-muted-foreground max-w-3xl">{project.description}</p>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0">
+                <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-1">
                   {project.images.map((image, imgIndex) => (
                     <div
                       key={imgIndex}
@@ -231,7 +231,7 @@ const Projects = () => {
                   <p className="text-muted-foreground max-w-3xl">{project.description}</p>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0">
+                <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-1">
                   {project.images.map((image, imgIndex) => (
                     <div
                       key={imgIndex}
