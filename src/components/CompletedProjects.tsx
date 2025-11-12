@@ -140,7 +140,11 @@ const CompletedProjects = () => {
           <div className="flex flex-wrap justify-center gap-4 pt-4">
             <Badge variant="outline" className="text-base px-4 py-2 border-luxury-gold/50">
               <Building2 className="w-4 h-4 mr-2 text-luxury-gold" />
-              30+ Years Experience
+              30+ Years of Excellence
+            </Badge>
+            <Badge variant="outline" className="text-base px-4 py-2 border-luxury-gold/50">
+              <Calendar className="w-4 h-4 mr-2 text-luxury-gold" />
+              100+ Projects
             </Badge>
           </div>
         </div>
@@ -202,7 +206,7 @@ const CompletedProjects = () => {
           
           <Card className="text-center p-8 bg-gradient-to-br from-luxury-gold/5 to-transparent border-luxury-gold/20 hover:shadow-xl transition-shadow">
             <CardHeader>
-              <CardTitle className="text-5xl font-bold text-luxury-gold">25+</CardTitle>
+              <CardTitle className="text-5xl font-bold text-luxury-gold">30+</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground text-lg">Years of Excellence</p>
