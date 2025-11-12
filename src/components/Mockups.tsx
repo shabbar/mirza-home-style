@@ -8,6 +8,8 @@ import bedroomView2 from "@/assets/mockups/bedroom-view-2.jpg";
 import roomInterior2 from "@/assets/mockups/room-interior-2.jpg";
 import bedroomView3 from "@/assets/mockups/bedroom-view-3.jpg";
 import workspace2 from "@/assets/mockups/workspace-2.jpg";
+import paf3 from "@/assets/projects/paf-new-3.jpg";
+import paf4 from "@/assets/projects/paf-new-4.jpg";
 
 const Mockups = () => {
   const mockupImages = [
@@ -21,6 +23,8 @@ const Mockups = () => {
     { src: roomInterior2, alt: "Hotel Suite Interior with Designer Furniture", category: "Suite Design" },
     { src: bedroomView3, alt: "Sophisticated Bedroom with Artistic Headboard", category: "Bedroom" },
     { src: workspace2, alt: "Functional Workspace with Entertainment Setup", category: "Workspace" },
+    { src: paf3, alt: "PAF Base Sargodha Auditorium Renovation", category: "Institutional" },
+    { src: paf4, alt: "PAF Base Sargodha Arbor Lobby Design", category: "Institutional" },
   ];
 
   return (
