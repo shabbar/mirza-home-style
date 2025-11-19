@@ -19,6 +19,7 @@ import diningArea from "@/assets/slider/dining-area.jpg";
 import hotelExterior from "@/assets/slider/hotel-exterior.jpg";
 import pafOffice from "@/assets/slider/paf-office.jpg";
 import restaurantAerial from "@/assets/slider/restaurant-aerial.jpg";
+import paf1 from "@/assets/projects/paf-new-1.jpg";
 
 const ProjectSlider = () => {
   const projectImages = [
@@ -35,6 +36,7 @@ const ProjectSlider = () => {
     { src: hotelExterior, title: "Luxury Hotel Exterior", subtitle: "Grand Architecture & Landscape Design" },
     { src: pafOffice, title: "Corporate Office Design", subtitle: "Professional Workspace Solutions" },
     { src: restaurantAerial, title: "Restaurant Overview", subtitle: "Complete Dining Experience Design" },
+    { src: paf1, title: "PAF Base Sargodha", subtitle: "Institutional Excellence & Professional Design" },
   ];
 
   return (
@@ -64,7 +66,6 @@ const ProjectSlider = () => {
                   alt={image.title}
                   className="w-full h-full object-cover object-center transition-all duration-[10000ms] ease-out hover:scale-110"
                   loading="lazy"
-                  style={{ aspectRatio: '16/9' }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent" />
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-accent/20 animate-fade-in" />
