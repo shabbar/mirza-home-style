@@ -3,13 +3,70 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { useState } from "react";
+import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    projectType: "",
+    message: ""
+  });
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Basic validation
+    if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone || !formData.message) {
+      toast.error("Please fill in all required fields");
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData
+      });
+
+      if (error) throw error;
+
+      toast.success("Thank you! We'll get back to you within 24-48 hours.");
+      
+      // Reset form
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        projectType: "",
+        message: ""
+      });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast.error("Failed to send message. Please try again or contact us directly.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.id || e.target.name]: e.target.value
+    });
+  };
+
   const contactInfo = [
     {
       icon: Phone,
       title: "Phone",
-      details: ["+92 3215 700 004"],
+      details: ["+92 321 5700 004", "+92 300 3012 472"],
       description: "Call us during business hours"
     },
     {
@@ -55,43 +112,75 @@ const Contact = () => {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
-              <form className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="firstName" className="block text-sm font-medium text-foreground mb-2">
                       First Name
                     </label>
-                    <Input id="firstName" placeholder="John" />
+                    <Input 
+                      id="firstName" 
+                      placeholder="John" 
+                      value={formData.firstName}
+                      onChange={handleInputChange}
+                      required
+                    />
                   </div>
                   <div>
                     <label htmlFor="lastName" className="block text-sm font-medium text-foreground mb-2">
                       Last Name
                     </label>
-                    <Input id="lastName" placeholder="Smith" />
+                    <Input 
+                      id="lastName" 
+                      placeholder="Smith" 
+                      value={formData.lastName}
+                      onChange={handleInputChange}
+                      required
+                    />
                   </div>
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
                     Email Address
                   </label>
-                  <Input id="email" type="email" placeholder="john@example.com" />
+                  <Input 
+                    id="email" 
+                    type="email" 
+                    placeholder="john@example.com"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    required
+                  />
                 </div>
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
                     Phone Number
                   </label>
-                  <Input id="phone" type="tel" placeholder="+92 300 1234 567" />
+                  <Input 
+                    id="phone" 
+                    type="tel" 
+                    placeholder="+92 300 1234 567"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    required
+                  />
                 </div>
                 <div>
                   <label htmlFor="projectType" className="block text-sm font-medium text-foreground mb-2">
                     Project Type
                   </label>
-                  <select className="w-full p-3 border border-input rounded-md bg-background">
-                    <option>Select project type</option>
-                    <option>Residential Design</option>
-                    <option>Commercial Design</option>
-                    <option>Kitchen & Bath</option>
-                    <option>Consultation Only</option>
+                  <select 
+                    id="projectType"
+                    name="projectType"
+                    className="w-full p-3 border border-input rounded-md bg-background"
+                    value={formData.projectType}
+                    onChange={handleInputChange}
+                  >
+                    <option value="">Select project type</option>
+                    <option value="Residential Design">Residential Design</option>
+                    <option value="Commercial Design">Commercial Design</option>
+                    <option value="Kitchen & Bath">Kitchen & Bath</option>
+                    <option value="Consultation Only">Consultation Only</option>
                   </select>
                 </div>
                 <div>
@@ -102,10 +191,19 @@ const Contact = () => {
                     id="message" 
                     placeholder="Tell us about your project, timeline, and any specific requirements..."
                     rows={4}
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    required
                   />
                 </div>
-                <Button variant="luxury" size="lg" className="w-full">
-                  Send Message
+                <Button 
+                  type="submit" 
+                  variant="luxury" 
+                  size="lg" 
+                  className="w-full"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
               </form>
             </CardContent>
